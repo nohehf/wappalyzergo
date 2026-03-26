@@ -289,6 +289,7 @@ func AppInfoFromFingerprint(fingerprint *CompiledFingerprint) AppInfo {
 		Website:     fingerprint.website,
 		Icon:        fingerprint.icon,
 		CPE:         fingerprint.cpe,
+		PURL:        fingerprint.purl,
 		Categories:  categories,
 	}
 }

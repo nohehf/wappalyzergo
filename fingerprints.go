@@ -26,6 +26,7 @@ type Fingerprint struct {
 	Description string                            `json:"description"`
 	Website     string                            `json:"website"`
 	CPE         string                            `json:"cpe"`
+	PURL        string                            `json:"purl"`
 	Icon        string                            `json:"icon"`
 }
 
@@ -63,8 +64,10 @@ type CompiledFingerprint struct {
 	scriptSrc []*ParsedPattern
 	// meta contains fingerprints for meta tags
 	meta map[string][]*ParsedPattern
-	// cpe contains the cpe for a fingerpritn
+	// cpe contains the cpe for a fingerprint
 	cpe string
+	// purl contains the package-url for a fingerprint
+	purl string
 }
 
 func (f *CompiledFingerprint) GetJSRules() map[string]*ParsedPattern {
@@ -80,6 +83,7 @@ type AppInfo struct {
 	Description string
 	Website     string
 	CPE         string
+	PURL        string
 	Icon        string
 	Categories  []string
 }
@@ -119,6 +123,7 @@ func compileFingerprint(fingerprint *Fingerprint) *CompiledFingerprint {
 		scriptSrc:   make([]*ParsedPattern, 0, len(fingerprint.ScriptSrc)),
 		meta:        make(map[string][]*ParsedPattern),
 		cpe:         fingerprint.CPE,
+		purl:        fingerprint.PURL,
 	}
 
 	for dom, patterns := range fingerprint.Dom {

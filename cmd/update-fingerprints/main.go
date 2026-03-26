@@ -14,7 +14,14 @@ import (
 	"strings"
 )
 
+// Enrichment holds CPE and/or PURL overrides for a technology
+type Enrichment struct {
+	CPE  string `json:"cpe,omitempty"`
+	PURL string `json:"purl,omitempty"`
+}
+
 var fingerprints = flag.String("fingerprints", "../../fingerprints_data.json", "File to write wappalyzer fingerprints to")
+var enrichmentFile = flag.String("enrichment", "enrichment.json", "JSON file with CPE/PURL enrichment data")
 
 // Fingerprints contains a map of fingerprints for tech detection
 type Fingerprints struct {
@@ -39,6 +46,7 @@ type Fingerprint struct {
 	Website     string                 `json:"website"`
 	Icon        string                 `json:"icon"`
 	CPE         string                 `json:"cpe"`
+	PURL        string                 `json:"purl"`
 }
 
 // OutputFingerprints contains a map of fingerprints for tech detection
@@ -64,6 +72,7 @@ type OutputFingerprint struct {
 	Description string                            `json:"description,omitempty"`
 	Website     string                            `json:"website,omitempty"`
 	CPE         string                            `json:"cpe,omitempty"`
+	PURL        string                            `json:"purl,omitempty"`
 	Icon        string                            `json:"icon,omitempty"`
 }
 
@@ -84,6 +93,21 @@ func makeFingerprintURLs() []string {
 	return fingerprints
 }
 
+func loadEnrichment(path string) map[string]Enrichment {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		log.Printf("No enrichment file found at %s, skipping enrichment\n", path)
+		return nil
+	}
+	enrichment := make(map[string]Enrichment)
+	if err := json.Unmarshal(data, &enrichment); err != nil {
+		log.Printf("Could not parse enrichment file %s: %v\n", path, err)
+		return nil
+	}
+	log.Printf("Loaded %d enrichment entries from %s\n", len(enrichment), path)
+	return enrichment
+}
+
 func main() {
 	flag.Parse()
 
@@ -101,7 +125,8 @@ func main() {
 	log.Printf("Read fingerprints from the server\n")
 	log.Printf("Starting normalizing of %d fingerprints...\n", len(fingerprintsOld.Apps))
 
-	outputFingerprints := normalizeFingerprints(fingerprintsOld)
+	enrichment := loadEnrichment(*enrichmentFile)
+	outputFingerprints := normalizeFingerprints(fingerprintsOld, enrichment)
 
 	log.Printf("Got %d valid fingerprints\n", len(outputFingerprints.Apps))
 
@@ -155,10 +180,21 @@ func gatherFingerprintsFromURL(URL string, fingerprints *Fingerprints) error {
 	return nil
 }
 
-func normalizeFingerprints(fingerprints *Fingerprints) *OutputFingerprints {
+func normalizeFingerprints(fingerprints *Fingerprints, enrichment map[string]Enrichment) *OutputFingerprints {
 	outputFingerprints := &OutputFingerprints{Apps: make(map[string]OutputFingerprint)}
 
 	for app, fingerprint := range fingerprints.Apps {
+		cpe := fingerprint.CPE
+		purl := fingerprint.PURL
+		// Apply enrichment: fill in missing CPE/PURL; upstream data takes precedence
+		if e, ok := enrichment[app]; ok {
+			if cpe == "" && e.CPE != "" {
+				cpe = e.CPE
+			}
+			if purl == "" && e.PURL != "" {
+				purl = e.PURL
+			}
+		}
 		output := OutputFingerprint{
 			Cats:        fingerprint.Cats,
 			Cookies:     make(map[string]string),
@@ -168,7 +204,8 @@ func normalizeFingerprints(fingerprints *Fingerprints) *OutputFingerprints {
 			Meta:        make(map[string][]string),
 			Description: fingerprint.Description,
 			Website:     fingerprint.Website,
-			CPE:         fingerprint.CPE,
+			CPE:         cpe,
+			PURL:        purl,
 			Icon:        fingerprint.Icon,
 		}
 

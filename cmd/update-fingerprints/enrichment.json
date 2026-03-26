@@ -1,0 +1,1274 @@
+{
+    "1C-Bitrix": {
+        "purl": "pkg:composer/bitrix/crm"
+    },
+    "ACF": {
+        "cpe": "cpe:2.3:a:advancedcustomfields:advanced_custom_fields:*:*:*:*:*:wordpress:*:*"
+    },
+    "AG Grid": {
+        "purl": "pkg:npm/ag-grid-community"
+    },
+    "AMP": {
+        "purl": "pkg:npm/@ampproject/runtime"
+    },
+    "ASP.NET": {
+        "cpe": "cpe:2.3:a:microsoft:asp.net:*:*:*:*:*:*:*:*"
+    },
+    "ASP.NET MVC": {
+        "cpe": "cpe:2.3:a:microsoft:asp.net_mvc:*:*:*:*:*:*:*:*"
+    },
+    "AWS SDK": {
+        "purl": "pkg:npm/aws-sdk"
+    },
+    "Adminer": {
+        "purl": "pkg:composer/vrana/adminer"
+    },
+    "Adobe Experience Manager": {
+        "purl": "pkg:maven/com.adobe.aem/uber-jar"
+    },
+    "AdonisJS": {
+        "purl": "pkg:npm/@adonisjs/core"
+    },
+    "Advanced Custom Fields": {
+        "cpe": "cpe:2.3:a:advancedcustomfields:advanced_custom_fields:*:*:*:*:*:wordpress:*:*"
+    },
+    "Aiohttp": {
+        "cpe": "cpe:2.3:a:aiohttp_project:aiohttp:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/aiohttp"
+    },
+    "Airflow": {
+        "cpe": "cpe:2.3:a:apache:airflow:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/apache-airflow"
+    },
+    "Akeneo": {
+        "purl": "pkg:composer/akeneo/pim-community-dev"
+    },
+    "Akismet": {
+        "cpe": "cpe:2.3:a:akismet:akismet:*:*:*:*:*:wordpress:*:*"
+    },
+    "Alembic": {
+        "purl": "pkg:pypi/alembic"
+    },
+    "Alpine.js": {
+        "purl": "pkg:npm/alpinejs"
+    },
+    "Amplitude": {
+        "purl": "pkg:npm/@amplitude/analytics-browser"
+    },
+    "Angular": {
+        "purl": "pkg:npm/@angular/core"
+    },
+    "AngularJS": {
+        "purl": "pkg:npm/angular"
+    },
+    "Anime.js": {
+        "purl": "pkg:npm/animejs"
+    },
+    "Ansible": {
+        "cpe": "cpe:2.3:a:redhat:ansible:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/ansible"
+    },
+    "Ant Design": {
+        "purl": "pkg:npm/antd"
+    },
+    "Antlers": {
+        "purl": "pkg:composer/statamic/cms"
+    },
+    "Apache HTTP Server": {
+        "purl": "pkg:generic/apache-httpd"
+    },
+    "Apache Kafka": {
+        "cpe": "cpe:2.3:a:apache:kafka:*:*:*:*:*:*:*:*"
+    },
+    "Apache Solr": {
+        "cpe": "cpe:2.3:a:apache:solr:*:*:*:*:*:*:*:*"
+    },
+    "Apache Superset": {
+        "cpe": "cpe:2.3:a:apache:superset:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/apache-superset"
+    },
+    "Apache Tomcat": {
+        "cpe": "cpe:2.3:a:apache:tomcat:*:*:*:*:*:*:*:*"
+    },
+    "Apache Traffic Server": {
+        "cpe": "cpe:2.3:a:apache:traffic_server:*:*:*:*:*:*:*:*"
+    },
+    "Apollo": {
+        "purl": "pkg:npm/@apollo/client"
+    },
+    "ApostropheCMS": {
+        "purl": "pkg:npm/apostrophe"
+    },
+    "Artifactory": {
+        "cpe": "cpe:2.3:a:jfrog:artifactory:*:*:*:*:*:*:*:*"
+    },
+    "Astro": {
+        "purl": "pkg:npm/astro"
+    },
+    "Auth0": {
+        "purl": "pkg:npm/@auth0/auth0-spa-js"
+    },
+    "Autoprefixer": {
+        "purl": "pkg:npm/autoprefixer"
+    },
+    "Axios": {
+        "cpe": "cpe:2.3:a:axios:axios:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/axios"
+    },
+    "Babel": {
+        "purl": "pkg:npm/@babel/core"
+    },
+    "Backbone.js": {
+        "purl": "pkg:npm/backbone"
+    },
+    "BigCommerce": {
+        "purl": "pkg:npm/@bigcommerce/stencil-cli"
+    },
+    "Blade": {
+        "purl": "pkg:composer/laravel/framework"
+    },
+    "Bootstrap": {
+        "purl": "pkg:npm/bootstrap"
+    },
+    "Bottle": {
+        "cpe": "cpe:2.3:a:bottlepy:bottle:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/bottle"
+    },
+    "Braintree": {
+        "purl": "pkg:npm/braintree-web"
+    },
+    "Buefy": {
+        "purl": "pkg:npm/buefy"
+    },
+    "Bugzilla": {
+        "cpe": "cpe:2.3:a:mozilla:bugzilla:*:*:*:*:*:*:*:*"
+    },
+    "Bulma": {
+        "purl": "pkg:npm/bulma"
+    },
+    "Bun": {
+        "purl": "pkg:generic/bun"
+    },
+    "CKEditor": {
+        "cpe": "cpe:2.3:a:ckeditor:ckeditor:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/ckeditor4"
+    },
+    "Cacti": {
+        "cpe": "cpe:2.3:a:cacti:cacti:*:*:*:*:*:*:*:*"
+    },
+    "Caddy": {
+        "cpe": "cpe:2.3:a:caddyserver:caddy:*:*:*:*:*:*:*:*",
+        "purl": "pkg:golang/github.com/caddyserver/caddy/v2"
+    },
+    "CakePHP": {
+        "cpe": "cpe:2.3:a:cakefoundation:cakephp:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/cakephp/cakephp"
+    },
+    "Cassandra": {
+        "cpe": "cpe:2.3:a:apache:cassandra:*:*:*:*:*:*:*:*"
+    },
+    "Celery": {
+        "cpe": "cpe:2.3:a:celeryproject:celery:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/celery"
+    },
+    "Chart.js": {
+        "purl": "pkg:npm/chart.js"
+    },
+    "Chef": {
+        "cpe": "cpe:2.3:a:chef:chef:*:*:*:*:*:*:*:*",
+        "purl": "pkg:gem/chef"
+    },
+    "Clerk": {
+        "purl": "pkg:npm/@clerk/nextjs"
+    },
+    "Cloudflare": {
+        "purl": "pkg:npm/cloudflare"
+    },
+    "CodeIgniter": {
+        "cpe": "cpe:2.3:a:codeigniter:codeigniter:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/codeigniter4/framework"
+    },
+    "Concrete CMS": {
+        "cpe": "cpe:2.3:a:concretecms:concrete_cms:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/concrete5/concrete5"
+    },
+    "Confluence": {
+        "cpe": "cpe:2.3:a:atlassian:confluence_server:*:*:*:*:*:*:*:*"
+    },
+    "Consul": {
+        "cpe": "cpe:2.3:a:hashicorp:consul:*:*:*:*:*:*:*:*"
+    },
+    "Contact Form 7": {
+        "cpe": "cpe:2.3:a:rocklobster:contact_form_7:*:*:*:*:*:wordpress:*:*"
+    },
+    "Contentful": {
+        "purl": "pkg:npm/contentful"
+    },
+    "CouchBase": {
+        "cpe": "cpe:2.3:a:couchbase:couchbase_server:*:*:*:*:*:*:*:*"
+    },
+    "CouchDB": {
+        "cpe": "cpe:2.3:a:apache:couchdb:*:*:*:*:*:*:*:*"
+    },
+    "Craft CMS": {
+        "cpe": "cpe:2.3:a:craftcms:craft_cms:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/craftcms/cms"
+    },
+    "Cypress": {
+        "purl": "pkg:npm/cypress"
+    },
+    "D3": {
+        "purl": "pkg:npm/d3"
+    },
+    "Dash": {
+        "purl": "pkg:pypi/dash"
+    },
+    "DataTables": {
+        "purl": "pkg:npm/datatables.net"
+    },
+    "Datadog": {
+        "purl": "pkg:npm/@datadog/browser-rum"
+    },
+    "Decap CMS": {
+        "purl": "pkg:npm/decap-cms-app"
+    },
+    "Deno": {
+        "cpe": "cpe:2.3:a:deno:deno:*:*:*:*:*:*:*:*",
+        "purl": "pkg:generic/deno"
+    },
+    "Directus": {
+        "purl": "pkg:npm/@directus/sdk"
+    },
+    "Discourse": {
+        "cpe": "cpe:2.3:a:discourse:discourse:*:*:*:*:*:*:*:*",
+        "purl": "pkg:gem/discourse"
+    },
+    "Django": {
+        "purl": "pkg:pypi/django"
+    },
+    "Docusaurus": {
+        "purl": "pkg:npm/@docusaurus/core"
+    },
+    "DokuWiki": {
+        "cpe": "cpe:2.3:a:dokuwiki:dokuwiki:*:*:*:*:*:*:*:*"
+    },
+    "DotNetNuke": {
+        "cpe": "cpe:2.3:a:dotnetnuke:dotnetnuke:*:*:*:*:*:*:*:*",
+        "purl": "pkg:nuget/DotNetNuke.Core"
+    },
+    "Drizzle ORM": {
+        "purl": "pkg:npm/drizzle-orm"
+    },
+    "Drupal": {
+        "purl": "pkg:composer/drupal/core"
+    },
+    "ESLint": {
+        "purl": "pkg:npm/eslint"
+    },
+    "Echo": {
+        "purl": "pkg:golang/github.com/labstack/echo/v4"
+    },
+    "Elastic APM": {
+        "purl": "pkg:npm/elastic-apm-node"
+    },
+    "Elasticsearch": {
+        "purl": "pkg:generic/elasticsearch"
+    },
+    "Elementor": {
+        "cpe": "cpe:2.3:a:elementor:elementor:*:*:*:*:*:wordpress:*:*",
+        "purl": "pkg:composer/elementor/elementor"
+    },
+    "Elixir": {
+        "cpe": "cpe:2.3:a:elixir-lang:elixir:*:*:*:*:*:*:*:*"
+    },
+    "Elm": {
+        "purl": "pkg:npm/elm"
+    },
+    "Ember.js": {
+        "purl": "pkg:npm/ember-source"
+    },
+    "Emotion": {
+        "purl": "pkg:npm/@emotion/react"
+    },
+    "Envoy": {
+        "cpe": "cpe:2.3:a:envoyproxy:envoy:*:*:*:*:*:*:*:*"
+    },
+    "Express": {
+        "purl": "pkg:npm/express"
+    },
+    "FastAPI": {
+        "cpe": "cpe:2.3:a:fastapi_project:fastapi:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/fastapi"
+    },
+    "Fastify": {
+        "cpe": "cpe:2.3:a:fastify:fastify:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/fastify"
+    },
+    "Firebase": {
+        "purl": "pkg:npm/firebase"
+    },
+    "Flask": {
+        "purl": "pkg:pypi/flask"
+    },
+    "Font Awesome": {
+        "purl": "pkg:npm/@fortawesome/fontawesome-free"
+    },
+    "Framer Motion": {
+        "purl": "pkg:npm/framer-motion"
+    },
+    "FuelPHP": {
+        "purl": "pkg:composer/fuel/fuel"
+    },
+    "FullStory": {
+        "purl": "pkg:npm/@fullstory/browser"
+    },
+    "Fullcalendar": {
+        "purl": "pkg:npm/@fullcalendar/core"
+    },
+    "GSAP": {
+        "purl": "pkg:npm/gsap"
+    },
+    "Gatsby": {
+        "cpe": "cpe:2.3:a:gatsbyjs:gatsby:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/gatsby"
+    },
+    "Ghost": {
+        "purl": "pkg:npm/ghost"
+    },
+    "Gin": {
+        "purl": "pkg:golang/github.com/gin-gonic/gin"
+    },
+    "GitBook": {
+        "purl": "pkg:npm/gitbook-cli"
+    },
+    "GitLab": {
+        "cpe": "cpe:2.3:a:gitlab:gitlab:*:*:*:*:*:*:*:*",
+        "purl": "pkg:gem/gitlab"
+    },
+    "Go": {
+        "cpe": "cpe:2.3:a:golang:go:*:*:*:*:*:*:*:*"
+    },
+    "Google Cloud": {
+        "purl": "pkg:npm/@google-cloud/common"
+    },
+    "Gradio": {
+        "purl": "pkg:pypi/gradio"
+    },
+    "Grafana": {
+        "cpe": "cpe:2.3:a:grafana:grafana:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/@grafana/data"
+    },
+    "GraphQL": {
+        "purl": "pkg:npm/graphql"
+    },
+    "Grav": {
+        "cpe": "cpe:2.3:a:getgrav:grav:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/getgrav/grav"
+    },
+    "Gravity Forms": {
+        "cpe": "cpe:2.3:a:gravityforms:gravity_forms:*:*:*:*:*:wordpress:*:*"
+    },
+    "Gridsome": {
+        "purl": "pkg:npm/gridsome"
+    },
+    "Gunicorn": {
+        "cpe": "cpe:2.3:a:gunicorn:gunicorn:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/gunicorn"
+    },
+    "Gutenberg": {
+        "purl": "pkg:npm/@wordpress/block-editor"
+    },
+    "HAProxy": {
+        "cpe": "cpe:2.3:a:haproxy:haproxy:*:*:*:*:*:*:*:*"
+    },
+    "Handlebars": {
+        "cpe": "cpe:2.3:a:handlebarsjs:handlebars:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/handlebars"
+    },
+    "Handsontable": {
+        "cpe": "cpe:2.3:a:handsoncode:handsontable:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/handsontable"
+    },
+    "Hapi.js": {
+        "cpe": "cpe:2.3:a:hapijs:hapi:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/@hapi/hapi"
+    },
+    "Helm": {
+        "purl": "pkg:golang/helm.sh/helm/v3"
+    },
+    "Heroku": {
+        "purl": "pkg:npm/heroku"
+    },
+    "Hexo": {
+        "purl": "pkg:npm/hexo"
+    },
+    "Highcharts": {
+        "purl": "pkg:npm/highcharts"
+    },
+    "Hono": {
+        "purl": "pkg:npm/hono"
+    },
+    "Hotjar": {
+        "purl": "pkg:npm/hotjar-snippet"
+    },
+    "Htmx": {
+        "purl": "pkg:npm/htmx.org"
+    },
+    "HubSpot": {
+        "purl": "pkg:npm/@hubspot/api-client"
+    },
+    "Hugo": {
+        "cpe": "cpe:2.3:a:gohugo:hugo:*:*:*:*:*:*:*:*",
+        "purl": "pkg:golang/github.com/gohugoio/hugo"
+    },
+    "IIS": {
+        "cpe": "cpe:2.3:a:microsoft:internet_information_services:*:*:*:*:*:*:*:*"
+    },
+    "Ibexa DXP": {
+        "purl": "pkg:composer/ibexa/oss"
+    },
+    "Inertia.js": {
+        "purl": "pkg:npm/@inertiajs/react"
+    },
+    "InfluxDB": {
+        "cpe": "cpe:2.3:a:influxdata:influxdb:*:*:*:*:*:*:*:*"
+    },
+    "Intercom": {
+        "purl": "pkg:npm/@intercom/messenger-js-sdk"
+    },
+    "Ionic": {
+        "purl": "pkg:npm/@ionic/core"
+    },
+    "Istio": {
+        "purl": "pkg:golang/istio.io/istio"
+    },
+    "Java": {
+        "cpe": "cpe:2.3:a:oracle:jdk:*:*:*:*:*:*:*:*"
+    },
+    "Jekyll": {
+        "cpe": "cpe:2.3:a:jekyllrb:jekyll:*:*:*:*:*:*:*:*",
+        "purl": "pkg:gem/jekyll"
+    },
+    "Jenkins": {
+        "cpe": "cpe:2.3:a:jenkins:jenkins:*:*:*:*:*:*:*:*",
+        "purl": "pkg:maven/org.jenkins-ci.main/jenkins-core"
+    },
+    "Jest": {
+        "purl": "pkg:npm/jest"
+    },
+    "Jinja2": {
+        "cpe": "cpe:2.3:a:palletsprojects:jinja:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/jinja2"
+    },
+    "Jira": {
+        "cpe": "cpe:2.3:a:atlassian:jira_server:*:*:*:*:*:*:*:*"
+    },
+    "Joomla": {
+        "purl": "pkg:composer/joomla/joomla-cms"
+    },
+    "Jotai": {
+        "purl": "pkg:npm/jotai"
+    },
+    "Jupyter": {
+        "cpe": "cpe:2.3:a:jupyter:notebook:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/notebook"
+    },
+    "JupyterLab": {
+        "purl": "pkg:pypi/jupyterlab"
+    },
+    "Kentico CMS": {
+        "cpe": "cpe:2.3:a:kentico:kentico_cms:*:*:*:*:*:*:*:*"
+    },
+    "Keycloak": {
+        "cpe": "cpe:2.3:a:redhat:keycloak:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/keycloak-js"
+    },
+    "KeystoneJS": {
+        "cpe": "cpe:2.3:a:keystonejs:keystone:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/@keystone-6/core"
+    },
+    "Kibana": {
+        "cpe": "cpe:2.3:a:elastic:kibana:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/kibana"
+    },
+    "Kirby": {
+        "cpe": "cpe:2.3:a:getkirby:kirby:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/getkirby/cms"
+    },
+    "Knockout.js": {
+        "purl": "pkg:npm/knockout"
+    },
+    "Koa": {
+        "cpe": "cpe:2.3:a:koajs:koa:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/koa"
+    },
+    "Kohana": {
+        "cpe": "cpe:2.3:a:kohanaframework:kohana:*:*:*:*:*:*:*:*"
+    },
+    "Kubernetes": {
+        "cpe": "cpe:2.3:a:kubernetes:kubernetes:*:*:*:*:*:*:*:*",
+        "purl": "pkg:golang/k8s.io/kubernetes"
+    },
+    "Kubernetes Dashboard": {
+        "purl": "pkg:golang/github.com/kubernetes/dashboard"
+    },
+    "Laminas": {
+        "purl": "pkg:composer/laminas/laminas-mvc"
+    },
+    "Laravel": {
+        "purl": "pkg:composer/laravel/framework"
+    },
+    "Leaflet": {
+        "cpe": "cpe:2.3:a:leaflet:leaflet:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/leaflet"
+    },
+    "Lerna": {
+        "purl": "pkg:npm/lerna"
+    },
+    "Less": {
+        "purl": "pkg:npm/less"
+    },
+    "Let's Encrypt": {
+        "cpe": "cpe:2.3:a:letsencrypt:certbot:*:*:*:*:*:*:*:*"
+    },
+    "Linkerd": {
+        "purl": "pkg:golang/github.com/linkerd/linkerd2"
+    },
+    "Lit": {
+        "purl": "pkg:npm/lit"
+    },
+    "LiteSpeed": {
+        "cpe": "cpe:2.3:a:litespeedtech:litespeed_web_server:*:*:*:*:*:*:*:*"
+    },
+    "Livewire": {
+        "cpe": "cpe:2.3:a:livewire:livewire:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/livewire/livewire"
+    },
+    "Lodash": {
+        "purl": "pkg:npm/lodash"
+    },
+    "LogRocket": {
+        "purl": "pkg:npm/logrocket"
+    },
+    "Lumen": {
+        "purl": "pkg:composer/laravel/lumen-framework"
+    },
+    "Magento": {
+        "purl": "pkg:composer/magento/product-community-edition"
+    },
+    "Mailchimp": {
+        "purl": "pkg:npm/@mailchimp/mailchimp_marketing"
+    },
+    "MantisBT": {
+        "cpe": "cpe:2.3:a:mantisbt:mantis_bug_tracker:*:*:*:*:*:*:*:*"
+    },
+    "Mapbox GL JS": {
+        "purl": "pkg:npm/mapbox-gl"
+    },
+    "MariaDB": {
+        "cpe": "cpe:2.3:a:mariadb:mariadb:*:*:*:*:*:*:*:*"
+    },
+    "Material UI": {
+        "purl": "pkg:npm/@mui/material"
+    },
+    "Material-UI": {
+        "purl": "pkg:npm/@mui/material"
+    },
+    "Matomo": {
+        "cpe": "cpe:2.3:a:matomo:matomo:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/matomo/matomo"
+    },
+    "MediaWiki": {
+        "cpe": "cpe:2.3:a:mediawiki:mediawiki:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/mediawiki/core"
+    },
+    "Memcached": {
+        "cpe": "cpe:2.3:a:memcached:memcached:*:*:*:*:*:*:*:*"
+    },
+    "Metabase": {
+        "cpe": "cpe:2.3:a:metabase:metabase:*:*:*:*:*:*:*:*"
+    },
+    "Meteor": {
+        "cpe": "cpe:2.3:a:meteor:meteor:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/meteor"
+    },
+    "Microsoft SQL Server": {
+        "cpe": "cpe:2.3:a:microsoft:sql_server:*:*:*:*:*:*:*:*"
+    },
+    "MinIO": {
+        "cpe": "cpe:2.3:a:minio:minio:*:*:*:*:*:*:*:*",
+        "purl": "pkg:golang/github.com/minio/minio"
+    },
+    "Mithril": {
+        "purl": "pkg:npm/mithril"
+    },
+    "Mixpanel": {
+        "purl": "pkg:npm/mixpanel-browser"
+    },
+    "MkDocs": {
+        "purl": "pkg:pypi/mkdocs"
+    },
+    "MobX": {
+        "purl": "pkg:npm/mobx"
+    },
+    "Moment.js": {
+        "purl": "pkg:npm/moment"
+    },
+    "MongoDB": {
+        "purl": "pkg:npm/mongodb"
+    },
+    "Mongoose": {
+        "cpe": "cpe:2.3:a:mongoosejs:mongoose:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/mongoose"
+    },
+    "Moodle": {
+        "cpe": "cpe:2.3:a:moodle:moodle:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/moodle/moodle"
+    },
+    "Mustache": {
+        "cpe": "cpe:2.3:a:mustache_project:mustache:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/mustache"
+    },
+    "MyBB": {
+        "cpe": "cpe:2.3:a:mybb:mybb:*:*:*:*:*:*:*:*"
+    },
+    "MySQL": {
+        "purl": "pkg:npm/mysql2"
+    },
+    "NATS": {
+        "purl": "pkg:golang/github.com/nats-io/nats-server/v2"
+    },
+    "Nagios": {
+        "cpe": "cpe:2.3:a:nagios:nagios:*:*:*:*:*:*:*:*"
+    },
+    "Neo4j": {
+        "cpe": "cpe:2.3:a:neo4j:neo4j:*:*:*:*:*:*:*:*"
+    },
+    "Neos CMS": {
+        "purl": "pkg:composer/neos/neos"
+    },
+    "NestJS": {
+        "purl": "pkg:npm/@nestjs/core"
+    },
+    "Netlify": {
+        "purl": "pkg:npm/netlify-cli"
+    },
+    "Netlify CMS": {
+        "purl": "pkg:npm/netlify-cms-app"
+    },
+    "New Relic": {
+        "purl": "pkg:npm/newrelic"
+    },
+    "Next.js": {
+        "purl": "pkg:npm/next"
+    },
+    "NextAuth.js": {
+        "purl": "pkg:npm/next-auth"
+    },
+    "Nextcloud": {
+        "cpe": "cpe:2.3:a:nextcloud:nextcloud_server:*:*:*:*:*:*:*:*"
+    },
+    "Nexus Repository": {
+        "cpe": "cpe:2.3:a:sonatype:nexus:*:*:*:*:*:*:*:*"
+    },
+    "Nginx": {
+        "purl": "pkg:generic/nginx"
+    },
+    "Node.js": {
+        "purl": "pkg:generic/node"
+    },
+    "Nomad": {
+        "cpe": "cpe:2.3:a:hashicorp:nomad:*:*:*:*:*:*:*:*"
+    },
+    "Nunjucks": {
+        "purl": "pkg:npm/nunjucks"
+    },
+    "Nuxt.js": {
+        "cpe": "cpe:2.3:a:nuxtjs:nuxt.js:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/nuxt"
+    },
+    "Nuxt.js 3": {
+        "purl": "pkg:npm/nuxt"
+    },
+    "NuxtJS": {
+        "cpe": "cpe:2.3:a:nuxtjs:nuxt.js:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/nuxt"
+    },
+    "Nx": {
+        "purl": "pkg:npm/nx"
+    },
+    "OXID eShop": {
+        "cpe": "cpe:2.3:a:oxid-esales:oxid_eshop:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/oxid-esales/oxideshop-ce"
+    },
+    "OctoberCMS": {
+        "cpe": "cpe:2.3:a:octobercms:october:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/october/rain"
+    },
+    "Okta": {
+        "purl": "pkg:npm/@okta/okta-auth-js"
+    },
+    "OpenCart": {
+        "purl": "pkg:composer/opencart/opencart"
+    },
+    "OpenLayers": {
+        "purl": "pkg:npm/ol"
+    },
+    "OpenResty": {
+        "cpe": "cpe:2.3:a:openresty:openresty:*:*:*:*:*:*:*:*"
+    },
+    "OpenSSL": {
+        "cpe": "cpe:2.3:a:openssl:openssl:*:*:*:*:*:*:*:*"
+    },
+    "OpenTelemetry": {
+        "purl": "pkg:npm/@opentelemetry/api"
+    },
+    "Oracle Database": {
+        "cpe": "cpe:2.3:a:oracle:database:*:*:*:*:*:*:*:*"
+    },
+    "Owl Carousel": {
+        "purl": "pkg:npm/owl.carousel"
+    },
+    "PHP": {
+        "purl": "pkg:generic/php"
+    },
+    "PNPM": {
+        "purl": "pkg:npm/pnpm"
+    },
+    "Pagekit": {
+        "cpe": "cpe:2.3:a:pagekit:pagekit:*:*:*:*:*:*:*:*"
+    },
+    "Parcel": {
+        "purl": "pkg:npm/parcel"
+    },
+    "Passenger": {
+        "cpe": "cpe:2.3:a:phusionpassenger:phusion_passenger:*:*:*:*:*:*:*:*",
+        "purl": "pkg:gem/passenger"
+    },
+    "Passport.js": {
+        "purl": "pkg:npm/passport"
+    },
+    "PayPal": {
+        "purl": "pkg:npm/@paypal/react-paypal-js"
+    },
+    "Payload CMS": {
+        "purl": "pkg:npm/payload"
+    },
+    "Pelican": {
+        "purl": "pkg:pypi/pelican"
+    },
+    "Phalcon": {
+        "cpe": "cpe:2.3:a:phalconphp:phalcon:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/phalcon/cphalcon"
+    },
+    "Phoenix Framework": {
+        "cpe": "cpe:2.3:a:phoenixframework:phoenix:*:*:*:*:*:*:*:*",
+        "purl": "pkg:hex/phoenix"
+    },
+    "Pimcore": {
+        "cpe": "cpe:2.3:a:pimcore:pimcore:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/pimcore/pimcore"
+    },
+    "Pinia": {
+        "purl": "pkg:npm/pinia"
+    },
+    "Playwright": {
+        "purl": "pkg:npm/playwright"
+    },
+    "Plyr": {
+        "purl": "pkg:npm/plyr"
+    },
+    "PocketBase": {
+        "purl": "pkg:golang/github.com/pocketbase/pocketbase"
+    },
+    "PostCSS": {
+        "purl": "pkg:npm/postcss"
+    },
+    "PostgreSQL": {
+        "purl": "pkg:generic/postgresql"
+    },
+    "Preact": {
+        "purl": "pkg:npm/preact"
+    },
+    "PrestaShop": {
+        "purl": "pkg:composer/prestashop/prestashop"
+    },
+    "Prettier": {
+        "purl": "pkg:npm/prettier"
+    },
+    "PrimeFaces": {
+        "cpe": "cpe:2.3:a:primefaces:primefaces:*:*:*:*:*:*:*:*",
+        "purl": "pkg:maven/org.primefaces/primefaces"
+    },
+    "PrimeVue": {
+        "purl": "pkg:npm/primevue"
+    },
+    "Prisma": {
+        "purl": "pkg:npm/@prisma/client"
+    },
+    "Prismic": {
+        "purl": "pkg:npm/@prismicio/client"
+    },
+    "ProcessWire": {
+        "cpe": "cpe:2.3:a:processwire:processwire:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/processwire/processwire"
+    },
+    "Prometheus": {
+        "purl": "pkg:golang/github.com/prometheus/prometheus"
+    },
+    "Puma": {
+        "cpe": "cpe:2.3:a:puma:puma:*:*:*:*:*:*:*:*",
+        "purl": "pkg:gem/puma"
+    },
+    "Puppet": {
+        "cpe": "cpe:2.3:a:puppet:puppet:*:*:*:*:*:*:*:*",
+        "purl": "pkg:gem/puppet"
+    },
+    "Pydantic": {
+        "purl": "pkg:pypi/pydantic"
+    },
+    "Pyramid": {
+        "cpe": "cpe:2.3:a:pylonsproject:pyramid:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/pyramid"
+    },
+    "PyroCMS": {
+        "purl": "pkg:composer/pyrocms/pyrocms"
+    },
+    "Quasar Framework": {
+        "purl": "pkg:npm/quasar"
+    },
+    "Qwik": {
+        "purl": "pkg:npm/@builder.io/qwik"
+    },
+    "RabbitMQ": {
+        "cpe": "cpe:2.3:a:pivotal_software:rabbitmq:*:*:*:*:*:*:*:*"
+    },
+    "React": {
+        "purl": "pkg:npm/react"
+    },
+    "React Native": {
+        "purl": "pkg:npm/react-native"
+    },
+    "React Native for Web": {
+        "purl": "pkg:npm/react-native-web"
+    },
+    "React Query": {
+        "purl": "pkg:npm/@tanstack/react-query"
+    },
+    "React Router": {
+        "purl": "pkg:npm/react-router"
+    },
+    "Recoil": {
+        "purl": "pkg:npm/recoil"
+    },
+    "Redash": {
+        "cpe": "cpe:2.3:a:redash:redash:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/redash"
+    },
+    "Redis": {
+        "purl": "pkg:generic/redis"
+    },
+    "Redmine": {
+        "cpe": "cpe:2.3:a:redmine:redmine:*:*:*:*:*:*:*:*",
+        "purl": "pkg:gem/redmine"
+    },
+    "Redux": {
+        "purl": "pkg:npm/redux"
+    },
+    "Remix": {
+        "purl": "pkg:npm/@remix-run/react"
+    },
+    "Rollup": {
+        "purl": "pkg:npm/rollup"
+    },
+    "Roundcube": {
+        "cpe": "cpe:2.3:a:roundcube:webmail:*:*:*:*:*:*:*:*"
+    },
+    "Ruby": {
+        "purl": "pkg:gem/ruby"
+    },
+    "Ruby on Rails": {
+        "purl": "pkg:gem/rails"
+    },
+    "SQLAlchemy": {
+        "cpe": "cpe:2.3:a:sqlalchemy:sqlalchemy:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/sqlalchemy"
+    },
+    "SQLite": {
+        "cpe": "cpe:2.3:a:sqlite:sqlite:*:*:*:*:*:*:*:*"
+    },
+    "SWR": {
+        "purl": "pkg:npm/swr"
+    },
+    "Sails.js": {
+        "cpe": "cpe:2.3:a:sailsjs:sails:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/sails"
+    },
+    "SaltStack": {
+        "cpe": "cpe:2.3:a:saltstack:salt:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/salt"
+    },
+    "Sanic": {
+        "purl": "pkg:pypi/sanic"
+    },
+    "Sanity": {
+        "purl": "pkg:npm/sanity"
+    },
+    "Sass": {
+        "purl": "pkg:npm/sass"
+    },
+    "Seafile": {
+        "cpe": "cpe:2.3:a:seafile:seafile:*:*:*:*:*:*:*:*"
+    },
+    "Segment": {
+        "purl": "pkg:npm/@segment/analytics-next"
+    },
+    "Semantic UI": {
+        "purl": "pkg:npm/semantic-ui"
+    },
+    "SendGrid": {
+        "purl": "pkg:npm/@sendgrid/mail"
+    },
+    "Sentry": {
+        "purl": "pkg:npm/@sentry/browser"
+    },
+    "Sequelize": {
+        "cpe": "cpe:2.3:a:sequelize:sequelize:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/sequelize"
+    },
+    "Shopify": {
+        "purl": "pkg:npm/@shopify/cli"
+    },
+    "Shopware": {
+        "cpe": "cpe:2.3:a:shopware:shopware:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/shopware/platform"
+    },
+    "Silex": {
+        "purl": "pkg:composer/silex/silex"
+    },
+    "Sinatra": {
+        "cpe": "cpe:2.3:a:sinatrarb:sinatra:*:*:*:*:*:*:*:*",
+        "purl": "pkg:gem/sinatra"
+    },
+    "Sitecore": {
+        "cpe": "cpe:2.3:a:sitecore:cms:*:*:*:*:*:*:*:*"
+    },
+    "Sitefinity": {
+        "cpe": "cpe:2.3:a:progress:sitefinity:*:*:*:*:*:*:*:*"
+    },
+    "Slick": {
+        "purl": "pkg:npm/slick-carousel"
+    },
+    "Slim": {
+        "cpe": "cpe:2.3:a:slimframework:slim:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/slim/slim"
+    },
+    "Slim Framework": {
+        "cpe": "cpe:2.3:a:slimframework:slim:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/slim/slim"
+    },
+    "Smarty": {
+        "cpe": "cpe:2.3:a:smarty:smarty:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/smarty/smarty"
+    },
+    "Socket.io": {
+        "cpe": "cpe:2.3:a:socket.io_project:socket.io:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/socket.io"
+    },
+    "Solid.js": {
+        "purl": "pkg:npm/solid-js"
+    },
+    "Solidus": {
+        "purl": "pkg:gem/solidus"
+    },
+    "SonarQube": {
+        "cpe": "cpe:2.3:a:sonarsource:sonarqube:*:*:*:*:*:*:*:*"
+    },
+    "Sphinx": {
+        "cpe": "cpe:2.3:a:sphinx-doc:sphinx:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/sphinx"
+    },
+    "Spree Commerce": {
+        "purl": "pkg:gem/spree"
+    },
+    "Spring Boot": {
+        "cpe": "cpe:2.3:a:vmware:spring_boot:*:*:*:*:*:*:*:*",
+        "purl": "pkg:maven/org.springframework.boot/spring-boot"
+    },
+    "Spring Framework": {
+        "cpe": "cpe:2.3:a:vmware:spring_framework:*:*:*:*:*:*:*:*",
+        "purl": "pkg:maven/org.springframework/spring-webmvc"
+    },
+    "Square": {
+        "purl": "pkg:npm/square"
+    },
+    "Starlette": {
+        "purl": "pkg:pypi/starlette"
+    },
+    "Statamic": {
+        "cpe": "cpe:2.3:a:statamic:statamic:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/statamic/cms"
+    },
+    "Stencil": {
+        "purl": "pkg:npm/@stencil/core"
+    },
+    "Stimulus": {
+        "purl": "pkg:npm/@hotwired/stimulus"
+    },
+    "Storyblok": {
+        "purl": "pkg:npm/@storyblok/react"
+    },
+    "Storybook": {
+        "purl": "pkg:npm/storybook"
+    },
+    "Strapi": {
+        "cpe": "cpe:2.3:a:strapi:strapi:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/@strapi/strapi"
+    },
+    "Streamlit": {
+        "purl": "pkg:pypi/streamlit"
+    },
+    "Stripe": {
+        "purl": "pkg:npm/stripe"
+    },
+    "SugarCRM": {
+        "cpe": "cpe:2.3:a:sugarcrm:sugarcrm:*:*:*:*:*:*:*:*"
+    },
+    "SuiteCRM": {
+        "cpe": "cpe:2.3:a:suitecrm:suitecrm:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/salesagility/suitecrm"
+    },
+    "Supabase": {
+        "purl": "pkg:npm/@supabase/supabase-js"
+    },
+    "Superset": {
+        "cpe": "cpe:2.3:a:apache:superset:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/apache-superset"
+    },
+    "Svelte": {
+        "purl": "pkg:npm/svelte"
+    },
+    "SvelteKit": {
+        "purl": "pkg:npm/@sveltejs/kit"
+    },
+    "Swagger UI": {
+        "cpe": "cpe:2.3:a:smartbear:swagger_ui:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/swagger-ui"
+    },
+    "Swiper": {
+        "purl": "pkg:npm/swiper"
+    },
+    "Symfony": {
+        "purl": "pkg:composer/symfony/framework-bundle"
+    },
+    "TYPO3": {
+        "cpe": "cpe:2.3:a:typo3:typo3:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/typo3/cms"
+    },
+    "TYPO3 CMS": {
+        "cpe": "cpe:2.3:a:typo3:typo3:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/typo3/cms"
+    },
+    "Tailwind CSS": {
+        "purl": "pkg:npm/tailwindcss"
+    },
+    "Tanstack Query": {
+        "purl": "pkg:npm/@tanstack/react-query"
+    },
+    "Terraform": {
+        "cpe": "cpe:2.3:a:hashicorp:terraform:*:*:*:*:*:*:*:*",
+        "purl": "pkg:golang/github.com/hashicorp/terraform"
+    },
+    "Three.js": {
+        "purl": "pkg:npm/three"
+    },
+    "Tina CMS": {
+        "purl": "pkg:npm/tinacms"
+    },
+    "TinyMCE": {
+        "cpe": "cpe:2.3:a:tiny:tinymce:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/tinymce"
+    },
+    "Tornado": {
+        "cpe": "cpe:2.3:a:tornadoweb:tornado:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/tornado"
+    },
+    "Trac": {
+        "cpe": "cpe:2.3:a:edgewall:trac:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/trac"
+    },
+    "Traefik": {
+        "cpe": "cpe:2.3:a:traefik:traefik:*:*:*:*:*:*:*:*",
+        "purl": "pkg:golang/github.com/traefik/traefik/v2"
+    },
+    "Turbo": {
+        "purl": "pkg:npm/@hotwired/turbo"
+    },
+    "Turborepo": {
+        "purl": "pkg:npm/turbo"
+    },
+    "Twig": {
+        "cpe": "cpe:2.3:a:symfony:twig:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/twig/twig"
+    },
+    "Twilio": {
+        "purl": "pkg:npm/twilio"
+    },
+    "TypeORM": {
+        "purl": "pkg:npm/typeorm"
+    },
+    "TypeScript": {
+        "cpe": "cpe:2.3:a:microsoft:typescript:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/typescript"
+    },
+    "Typo3": {
+        "cpe": "cpe:2.3:a:typo3:typo3:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/typo3/cms"
+    },
+    "Umbraco CMS": {
+        "cpe": "cpe:2.3:a:umbraco:umbraco_cms:*:*:*:*:*:*:*:*",
+        "purl": "pkg:nuget/Umbraco.Cms"
+    },
+    "Underscore.js": {
+        "purl": "pkg:npm/underscore"
+    },
+    "Unicorn": {
+        "purl": "pkg:gem/unicorn"
+    },
+    "Uvicorn": {
+        "purl": "pkg:pypi/uvicorn"
+    },
+    "Varnish": {
+        "cpe": "cpe:2.3:a:varnish-software:varnish_cache:*:*:*:*:*:*:*:*"
+    },
+    "Vault": {
+        "cpe": "cpe:2.3:a:hashicorp:vault:*:*:*:*:*:*:*:*",
+        "purl": "pkg:golang/github.com/hashicorp/vault"
+    },
+    "Vercel": {
+        "purl": "pkg:npm/vercel"
+    },
+    "Video.js": {
+        "cpe": "cpe:2.3:a:videojs:video.js:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/video.js"
+    },
+    "Vite": {
+        "purl": "pkg:npm/vite"
+    },
+    "Vitest": {
+        "purl": "pkg:npm/vitest"
+    },
+    "Vue Router": {
+        "purl": "pkg:npm/vue-router"
+    },
+    "Vue.js": {
+        "cpe": "cpe:2.3:a:vuejs:vue.js:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/vue"
+    },
+    "Vuetify": {
+        "purl": "pkg:npm/vuetify"
+    },
+    "Vuex": {
+        "purl": "pkg:npm/vuex"
+    },
+    "WP Rocket": {
+        "purl": "pkg:composer/wp-media/wp-rocket"
+    },
+    "Webpack": {
+        "cpe": "cpe:2.3:a:webpack:webpack:*:*:*:*:*:*:*:*",
+        "purl": "pkg:npm/webpack"
+    },
+    "WooCommerce": {
+        "cpe": "cpe:2.3:a:woocommerce:woocommerce:*:*:*:*:*:wordpress:*:*",
+        "purl": "pkg:composer/woocommerce/woocommerce"
+    },
+    "WordPress": {
+        "purl": "pkg:composer/wordpress/wordpress"
+    },
+    "Wordfence": {
+        "cpe": "cpe:2.3:a:wordfence:wordfence:*:*:*:*:*:wordpress:*:*"
+    },
+    "XState": {
+        "purl": "pkg:npm/xstate"
+    },
+    "XWiki": {
+        "cpe": "cpe:2.3:a:xwiki:xwiki:*:*:*:*:*:*:*:*",
+        "purl": "pkg:maven/org.xwiki.platform/xwiki-platform-web-war"
+    },
+    "Yarn": {
+        "purl": "pkg:npm/yarn"
+    },
+    "Yii": {
+        "cpe": "cpe:2.3:a:yiiframework:yii:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/yiisoft/yii2"
+    },
+    "Yoast SEO": {
+        "cpe": "cpe:2.3:a:yoast:yoast_seo:*:*:*:*:*:wordpress:*:*",
+        "purl": "pkg:composer/yoast/wordpress-seo"
+    },
+    "Zabbix": {
+        "cpe": "cpe:2.3:a:zabbix:zabbix:*:*:*:*:*:*:*:*"
+    },
+    "Zend Framework": {
+        "cpe": "cpe:2.3:a:zend:zend_framework:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/laminas/laminas-mvc"
+    },
+    "Zendesk": {
+        "purl": "pkg:npm/zendesk-node-api"
+    },
+    "ZooKeeper": {
+        "cpe": "cpe:2.3:a:apache:zookeeper:*:*:*:*:*:*:*:*"
+    },
+    "Zustand": {
+        "purl": "pkg:npm/zustand"
+    },
+    "eZ Platform": {
+        "purl": "pkg:composer/ibexa/oss"
+    },
+    "esbuild": {
+        "purl": "pkg:npm/esbuild"
+    },
+    "etcd": {
+        "cpe": "cpe:2.3:a:etcd:etcd:*:*:*:*:*:*:*:*",
+        "purl": "pkg:golang/go.etcd.io/etcd"
+    },
+    "gunicorn": {
+        "cpe": "cpe:2.3:a:gunicorn:gunicorn:*:*:*:*:*:*:*:*",
+        "purl": "pkg:pypi/gunicorn"
+    },
+    "htmx": {
+        "purl": "pkg:npm/htmx.org"
+    },
+    "jQuery": {
+        "purl": "pkg:npm/jquery"
+    },
+    "jQuery Migrate": {
+        "purl": "pkg:npm/jquery-migrate"
+    },
+    "jQuery UI": {
+        "purl": "pkg:npm/jquery-ui"
+    },
+    "ownCloud": {
+        "cpe": "cpe:2.3:a:owncloud:owncloud:*:*:*:*:*:*:*:*"
+    },
+    "parcel": {
+        "purl": "pkg:npm/parcel"
+    },
+    "phpBB": {
+        "cpe": "cpe:2.3:a:phpbb:phpbb:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/phpbb/phpbb"
+    },
+    "phpMyAdmin": {
+        "cpe": "cpe:2.3:a:phpmyadmin:phpmyadmin:*:*:*:*:*:*:*:*",
+        "purl": "pkg:composer/phpmyadmin/phpmyadmin"
+    },
+    "styled-components": {
+        "purl": "pkg:npm/styled-components"
+    },
+    "tRPC": {
+        "purl": "pkg:npm/@trpc/server"
+    },
+    "vtiger CRM": {
+        "cpe": "cpe:2.3:a:vtiger:vtiger_crm:*:*:*:*:*:*:*:*"
+    }
+}
