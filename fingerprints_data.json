@@ -1196,6 +1196,7 @@
             },
             "description": "Ace is an embeddable code editor written in JavaScript.",
             "website": "https://github.com/ajaxorg/ace",
+            "cpe": "cpe:2.3:a:vmware:ace:*:*:*:*:*:*:*:*",
             "icon": "Ace.png"
         },
         "AceShop": {
@@ -26238,6 +26239,7 @@
             ],
             "description": "Eggplant is a software testing and monitoring company.",
             "website": "https://www.eggplantsoftware.com",
+            "cpe": "cpe:2.3:a:jenkins:eggplant:*:*:*:*:*:*:*:*",
             "icon": "Eggplant.svg"
         },
         "Ektron CMS": {

@@ -22,6 +22,7 @@ type Enrichment struct {
 
 var fingerprints = flag.String("fingerprints", "../../fingerprints_data.json", "File to write wappalyzer fingerprints to")
 var enrichmentFile = flag.String("enrichment", "enrichment.json", "JSON file with CPE/PURL enrichment data")
+var mineCPEs = flag.Bool("mine-cpes", true, "Download CPE dictionary, auto-confirm new CPEs, and apply PURL corrections to the enrichment file before building")
 
 // Fingerprints contains a map of fingerprints for tech detection
 type Fingerprints struct {
@@ -126,6 +127,9 @@ func main() {
 	log.Printf("Starting normalizing of %d fingerprints...\n", len(fingerprintsOld.Apps))
 
 	enrichment := loadEnrichment(*enrichmentFile)
+	if *mineCPEs {
+		enrichment = mineAndUpdateEnrichment(fingerprintsOld.Apps, enrichment, *enrichmentFile)
+	}
 	outputFingerprints := normalizeFingerprints(fingerprintsOld, enrichment)
 
 	log.Printf("Got %d valid fingerprints\n", len(outputFingerprints.Apps))
