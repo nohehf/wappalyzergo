@@ -207,6 +207,21 @@ type matchPartResult struct {
 	application string
 	confidence  int
 	version     string
+	evidences   []Evidence
+}
+
+// Evidence holds information about the exact string that triggered a fingerprint match,
+// allowing callers to locate and highlight the match in the original source.
+type Evidence struct {
+	// Part is the section of the response that was matched
+	// (e.g. "html", "headers", "cookies", "meta", "script").
+	Part string
+	// Key is the header name, cookie name, or meta attribute name for key-value parts.
+	// Empty for html and script parts.
+	Key string
+	// Matched is the exact substring matched by the pattern.
+	// Empty for existence-only (SkipRegex) patterns.
+	Matched string
 }
 
 // FingerprintWithTitle identifies technologies on a target,
@@ -292,6 +307,42 @@ func AppInfoFromFingerprint(fingerprint *CompiledFingerprint) AppInfo {
 		PURL:        fingerprint.purl,
 		Categories:  categories,
 	}
+}
+
+// FingerprintWithEvidence identifies technologies on a target,
+// based on the received response headers and body.
+// It returns a map from formatted app name (including version when detected)
+// to the list of Evidence values that triggered the match, so callers can
+// locate and highlight the exact matched strings in the original source.
+//
+// Body should not be mutated while this function is being called, or it may
+// lead to unexpected things.
+func (s *Wappalyze) FingerprintWithEvidence(headers map[string][]string, body []byte) map[string][]Evidence {
+	result := make(map[string][]Evidence)
+
+	normalizedBody := bytes.ToLower(body)
+	normalizedHeaders := s.normalizeHeaders(headers)
+
+	collect := func(apps []matchPartResult) {
+		for _, app := range apps {
+			if app.confidence == 0 {
+				continue
+			}
+			key := FormatAppVersion(app.application, app.version)
+			result[key] = append(result[key], app.evidences...)
+		}
+	}
+
+	collect(s.checkHeaders(normalizedHeaders))
+
+	cookies := s.findSetCookie(normalizedHeaders)
+	if len(cookies) > 0 {
+		collect(s.checkCookies(cookies))
+	}
+
+	collect(s.checkBody(normalizedBody))
+
+	return result
 }
 
 // FingerprintWithCats identifies technologies on a target,

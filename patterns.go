@@ -99,6 +99,25 @@ func (p *ParsedPattern) Evaluate(target string) (bool, string) {
 	return true, extractedVersion
 }
 
+// EvaluateWithEvidence is like Evaluate but also returns the exact substring
+// that was matched by the pattern, useful for highlighting evidence in source files.
+// For SkipRegex patterns (existence checks), matched will be empty.
+func (p *ParsedPattern) EvaluateWithEvidence(target string) (matched bool, version string, evidence string) {
+	if p.SkipRegex {
+		return true, "", ""
+	}
+	if p.regex == nil {
+		return false, "", ""
+	}
+
+	submatches := p.regex.FindStringSubmatch(target)
+	if len(submatches) == 0 {
+		return false, "", ""
+	}
+	extractedVersion, _ := p.extractVersion(submatches)
+	return true, extractedVersion, submatches[0]
+}
+
 // extractVersion uses the provided pattern to extract version information from a target string.
 func (p *ParsedPattern) extractVersion(submatches []string) (string, error) {
 	if len(submatches) == 0 {

@@ -217,6 +217,25 @@ func compileFingerprint(fingerprint *Fingerprint) *CompiledFingerprint {
 	return compiled
 }
 
+// partName returns a human-readable name for a part constant.
+func partName(p part) string {
+	switch p {
+	case cookiesPart:
+		return "cookies"
+	case jsPart:
+		return "js"
+	case headersPart:
+		return "headers"
+	case htmlPart:
+		return "html"
+	case scriptPart:
+		return "script"
+	case metaPart:
+		return "meta"
+	}
+	return "unknown"
+}
+
 // matchString matches a string for the fingerprints
 func (f *CompiledFingerprints) matchString(data string, part part) []matchPartResult {
 	var matched bool
@@ -225,12 +244,16 @@ func (f *CompiledFingerprints) matchString(data string, part part) []matchPartRe
 	for app, fingerprint := range f.Apps {
 		var version string
 		var confidence int
+		var evidences []Evidence
+
+		pName := partName(part)
 
 		switch part {
 		case jsPart:
 			for _, pattern := range fingerprint.js {
-				if valid, versionString := pattern.Evaluate(data); valid {
+				if valid, versionString, ev := pattern.EvaluateWithEvidence(data); valid {
 					matched = true
+					evidences = append(evidences, Evidence{Part: pName, Matched: ev})
 					if pattern.Confidence > confidence {
 						confidence = pattern.Confidence
 					}
@@ -241,8 +264,9 @@ func (f *CompiledFingerprints) matchString(data string, part part) []matchPartRe
 			}
 		case scriptPart:
 			for _, pattern := range fingerprint.scriptSrc {
-				if valid, versionString := pattern.Evaluate(data); valid {
+				if valid, versionString, ev := pattern.EvaluateWithEvidence(data); valid {
 					matched = true
+					evidences = append(evidences, Evidence{Part: pName, Matched: ev})
 					if pattern.Confidence > confidence {
 						confidence = pattern.Confidence
 					}
@@ -253,8 +277,9 @@ func (f *CompiledFingerprints) matchString(data string, part part) []matchPartRe
 			}
 		case htmlPart:
 			for _, pattern := range fingerprint.html {
-				if valid, versionString := pattern.Evaluate(data); valid {
+				if valid, versionString, ev := pattern.EvaluateWithEvidence(data); valid {
 					matched = true
+					evidences = append(evidences, Evidence{Part: pName, Matched: ev})
 					if pattern.Confidence > confidence {
 						confidence = pattern.Confidence
 					}
@@ -275,6 +300,7 @@ func (f *CompiledFingerprints) matchString(data string, part part) []matchPartRe
 			application: app,
 			version:     version,
 			confidence:  confidence,
+			evidences:   evidences,
 		})
 		if len(fingerprint.implies) > 0 {
 			for _, implies := range fingerprint.implies {
@@ -297,6 +323,9 @@ func (f *CompiledFingerprints) matchKeyValueString(key, value string, part part)
 	for app, fingerprint := range f.Apps {
 		var version string
 		var confidence int
+		var evidences []Evidence
+
+		pName := partName(part)
 
 		switch part {
 		case cookiesPart:
@@ -305,8 +334,9 @@ func (f *CompiledFingerprints) matchKeyValueString(key, value string, part part)
 					continue
 				}
 
-				if valid, versionString := pattern.Evaluate(value); valid {
+				if valid, versionString, ev := pattern.EvaluateWithEvidence(value); valid {
 					matched = true
+					evidences = append(evidences, Evidence{Part: pName, Key: key, Matched: ev})
 					if pattern.Confidence > confidence {
 						confidence = pattern.Confidence
 					}
@@ -321,8 +351,9 @@ func (f *CompiledFingerprints) matchKeyValueString(key, value string, part part)
 					continue
 				}
 
-				if valid, versionString := pattern.Evaluate(value); valid {
+				if valid, versionString, ev := pattern.EvaluateWithEvidence(value); valid {
 					matched = true
+					evidences = append(evidences, Evidence{Part: pName, Key: key, Matched: ev})
 					if pattern.Confidence > confidence {
 						confidence = pattern.Confidence
 					}
@@ -338,8 +369,9 @@ func (f *CompiledFingerprints) matchKeyValueString(key, value string, part part)
 				}
 
 				for _, pattern := range patterns {
-					if valid, versionString := pattern.Evaluate(value); valid {
+					if valid, versionString, ev := pattern.EvaluateWithEvidence(value); valid {
 						matched = true
+						evidences = append(evidences, Evidence{Part: pName, Key: key, Matched: ev})
 						if pattern.Confidence > confidence {
 							confidence = pattern.Confidence
 						}
@@ -360,6 +392,7 @@ func (f *CompiledFingerprints) matchKeyValueString(key, value string, part part)
 			application: app,
 			version:     version,
 			confidence:  confidence,
+			evidences:   evidences,
 		})
 		if len(fingerprint.implies) > 0 {
 			for _, implies := range fingerprint.implies {
@@ -382,6 +415,9 @@ func (f *CompiledFingerprints) matchMapString(keyValue map[string]string, part p
 	for app, fingerprint := range f.Apps {
 		var version string
 		var confidence int
+		var evidences []Evidence
+
+		pName := partName(part)
 
 		switch part {
 		case cookiesPart:
@@ -392,10 +428,12 @@ func (f *CompiledFingerprints) matchMapString(keyValue map[string]string, part p
 				}
 				if pattern == nil {
 					matched = true
+					evidences = append(evidences, Evidence{Part: pName, Key: data})
 					continue
 				}
-				if valid, versionString := pattern.Evaluate(value); valid {
+				if valid, versionString, ev := pattern.EvaluateWithEvidence(value); valid {
 					matched = true
+					evidences = append(evidences, Evidence{Part: pName, Key: data, Matched: ev})
 					if pattern.Confidence > confidence {
 						confidence = pattern.Confidence
 					}
@@ -411,8 +449,9 @@ func (f *CompiledFingerprints) matchMapString(keyValue map[string]string, part p
 					continue
 				}
 
-				if valid, versionString := pattern.Evaluate(value); valid {
+				if valid, versionString, ev := pattern.EvaluateWithEvidence(value); valid {
 					matched = true
+					evidences = append(evidences, Evidence{Part: pName, Key: data, Matched: ev})
 					if pattern.Confidence > confidence {
 						confidence = pattern.Confidence
 					}
@@ -429,8 +468,9 @@ func (f *CompiledFingerprints) matchMapString(keyValue map[string]string, part p
 				}
 
 				for _, pattern := range patterns {
-					if valid, versionString := pattern.Evaluate(value); valid {
+					if valid, versionString, ev := pattern.EvaluateWithEvidence(value); valid {
 						matched = true
+						evidences = append(evidences, Evidence{Part: pName, Key: data, Matched: ev})
 						if pattern.Confidence > confidence {
 							confidence = pattern.Confidence
 						}
@@ -451,6 +491,7 @@ func (f *CompiledFingerprints) matchMapString(keyValue map[string]string, part p
 			application: app,
 			version:     version,
 			confidence:  confidence,
+			evidences:   evidences,
 		})
 		if len(fingerprint.implies) > 0 {
 			for _, implies := range fingerprint.implies {
