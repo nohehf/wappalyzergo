@@ -21,8 +21,9 @@ type Enrichment struct {
 }
 
 var fingerprints = flag.String("fingerprints", "../../fingerprints_data.json", "File to write wappalyzer fingerprints to")
-var enrichmentFile = flag.String("enrichment", "enrichment.json", "JSON file with CPE/PURL enrichment data")
-var mineCPEs = flag.Bool("mine-cpes", true, "Download CPE dictionary, auto-confirm new CPEs, and apply PURL corrections to the enrichment file before building")
+var enrichmentFile = flag.String("enrichment", "enrichment.json", "Read-only JSON file with manually curated CPE/PURL overrides")
+var mineCPEs = flag.Bool("mine-cpes", true, "Fetch CPE dictionary sources and auto-assign CPEs for technologies that have none")
+var discoverPURLs = flag.Bool("discover-purls", true, "Query package registries (npm, etc.) to discover PURLs for technologies that have none (slower)")
 
 // Fingerprints contains a map of fingerprints for tech detection
 type Fingerprints struct {
@@ -126,11 +127,19 @@ func main() {
 	log.Printf("Read fingerprints from the server\n")
 	log.Printf("Starting normalizing of %d fingerprints...\n", len(fingerprintsOld.Apps))
 
-	enrichment := loadEnrichment(*enrichmentFile)
+	// Load manually curated overrides (read-only; never auto-written).
+	manual := loadEnrichment(*enrichmentFile)
+
+	// Compute in-memory enrichment: auto-mined CPEs + PURL corrections + manual overrides.
+	var combined map[string]Enrichment
 	if *mineCPEs {
-		enrichment = mineAndUpdateEnrichment(fingerprintsOld.Apps, enrichment, *enrichmentFile)
+		combined = mineCPEsAndPURLs(fingerprintsOld.Apps, manual, *discoverPURLs)
+		printEnrichmentStats(combined, len(fingerprintsOld.Apps))
+	} else {
+		combined = manual
 	}
-	outputFingerprints := normalizeFingerprints(fingerprintsOld, enrichment)
+
+	outputFingerprints := normalizeFingerprints(fingerprintsOld, combined)
 
 	log.Printf("Got %d valid fingerprints\n", len(outputFingerprints.Apps))
 
@@ -190,13 +199,24 @@ func normalizeFingerprints(fingerprints *Fingerprints, enrichment map[string]Enr
 	for app, fingerprint := range fingerprints.Apps {
 		cpe := fingerprint.CPE
 		purl := fingerprint.PURL
-		// Apply enrichment: fill in missing CPE/PURL; upstream data takes precedence
 		if e, ok := enrichment[app]; ok {
+			// CPE: upstream is authoritative; enrichment only fills gaps.
 			if cpe == "" && e.CPE != "" {
 				cpe = e.CPE
 			}
-			if purl == "" && e.PURL != "" {
+			// PURL: enrichment overrides upstream when it carries an explicit
+			// value.  This lets corrections replace wrong upstream PURLs
+			// (e.g. pkg:gem/gitlab → pkg:docker/gitlab/gitlab-ce).
+			if e.PURL != "" {
 				purl = e.PURL
+			}
+		} else {
+			// No enrichment entry for this tech.  Still check whether a PURL
+			// correction explicitly removes the upstream PURL (correction = "").
+			// This happens when mineCPEsAndPURLs deleted the entry after setting
+			// the correction to "" with no manual override to keep it.
+			if correction, isCorrected := purlCorrections[app]; isCorrected && correction == "" {
+				purl = ""
 			}
 		}
 		output := OutputFingerprint{

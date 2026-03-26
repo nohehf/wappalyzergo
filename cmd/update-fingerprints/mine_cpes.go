@@ -11,54 +11,109 @@ import (
 	"regexp"
 	"sort"
 	"strings"
+	"sync"
 )
 
-const cpeDictURL  = "https://raw.githubusercontent.com/tiiuae/cpedict/main/data/cpes.csv"
-const cpeDictPath = "/tmp/wappalyzer_cpes.csv"
-
-// skipCPEAutoAssign lists technologies where the auto-miner produces a known
-// false positive (e.g. the CPE dict entry belongs to an unrelated product that
-// happens to share the same name).
-var skipCPEAutoAssign = map[string]bool{
-	"Ace":        true, // cpedict has cpe:2.3:a:vmware:ace (VMware Ace, a desktop virtualizer), not the ACE code editor
-	"Amazon EC2": true, // cpedict has cpe:2.3:a:jenkins:amazon_ec2 (Jenkins plugin), not AWS EC2
-	"Amazon S3":  true, // cpedict has cpe:2.3:a:easydigitaldownloads:amazon_s3 (EDD plugin), not AWS S3
-	"Datadog":    true, // cpedict has cpe:2.3:a:jenkins:datadog (Jenkins plugin), not the Datadog SaaS product
-	"Eggplant":   true, // cpedict has cpe:2.3:a:jenkins:eggplant (Jenkins plugin), not the Eggplant testing tool
+// ── CPE sources ────────────────────────────────────────────────────────────────
+// Each entry must be a URL to a CSV file with at least "vendor" and "product"
+// columns.  Add more sources here as they become available.
+var cpeDictSources = []string{
+	"https://raw.githubusercontent.com/tiiuae/cpedict/main/data/cpes.csv",
 }
 
+// ── PURL sources ───────────────────────────────────────────────────────────────
+// purlSource is a function that, given a technology name and its upstream
+// fingerprint, attempts to return a PURL string.  It returns "" if no match
+// is found.  Sources are tried in order; the first non-empty result wins
+// (unless overridden by manual enrichment.json).
+type purlSource func(techName string, fp Fingerprint) string
+
+// purlSources is the ordered list of automatic PURL discovery functions.
+// Add new sources here (e.g. PyPI, RubyGems, Docker Hub) as needed.
+var purlSources = []purlSource{
+	npmPURLSource,
+}
+
+// npmJSCategories are wappalyzer category IDs whose technologies are typically
+// distributed as npm packages.
+var npmJSCategories = map[int]bool{
+	12: true, // JavaScript frameworks
+	59: true, // JavaScript graphics
+	62: true, // UI frameworks
+	46: true, // Static site generators (many are npm-based)
+	63: true, // Blogging platforms (many are npm-based)
+}
+
+// npmPURLSource queries the npm registry to see if a package with this
+// technology's name (lower-cased) exists.  It only applies to technologies
+// in JavaScript-related categories.
+// Source: https://registry.npmjs.org/
+func npmPURLSource(techName string, fp Fingerprint) string {
+	hasJSCat := false
+	for _, cat := range fp.Cats {
+		if npmJSCategories[cat] {
+			hasJSCat = true
+			break
+		}
+	}
+	if !hasJSCat {
+		return ""
+	}
+	name := strings.ToLower(techName)
+	resp, err := http.Head("https://registry.npmjs.org/" + name)
+	if err != nil || resp.StatusCode != http.StatusOK {
+		return ""
+	}
+	return "pkg:npm/" + name
+}
+
+// ── PURL corrections ──────────────────────────────────────────────────────────
 // purlCorrections maps technology names to their corrected PURL.
-// An empty string means the existing PURL should be removed.
+// An empty string means the existing PURL from upstream should be removed.
+// These corrections override whatever the upstream webappanalyzer data says.
 var purlCorrections = map[string]string{
 	// pkg:gem/gitlab is the Ruby REST client, not GitLab itself
-	"GitLab":             "pkg:docker/gitlab/gitlab-ce",
+	"GitLab": "pkg:docker/gitlab/gitlab-ce",
 	// pkg:npm/@grafana/data is the frontend component lib, not the server
-	"Grafana":            "pkg:docker/grafana/grafana",
+	"Grafana": "pkg:docker/grafana/grafana",
 	// pkg:npm/kibana doesn't exist as a stand-alone installable pkg
-	"Kibana":             "pkg:docker/elastic/kibana",
+	"Kibana": "pkg:docker/elastic/kibana",
 	// pkg:npm/elasticsearch is a JS client, not the search server
-	"Elasticsearch":      "pkg:docker/elasticsearch/elasticsearch",
+	"Elasticsearch": "pkg:docker/elasticsearch/elasticsearch",
 	// pkg:generic/redis – pkg:pypi/redis is a client lib, not the server
-	"Redis":              "pkg:docker/redis/redis",
+	"Redis": "pkg:docker/redis/redis",
 	// pkg:generic/nginx
-	"Nginx":              "pkg:docker/nginx/nginx",
+	"Nginx": "pkg:docker/nginx/nginx",
 	// pkg:generic/apache-httpd
 	"Apache HTTP Server": "pkg:docker/httpd/httpd",
 	// pkg:generic/postgresql
-	"PostgreSQL":         "pkg:docker/postgres/postgres",
+	"PostgreSQL": "pkg:docker/postgres/postgres",
 	// pkg:generic/node
-	"Node.js":            "pkg:docker/node/node",
+	"Node.js": "pkg:docker/node/node",
 	// pkg:generic/php
-	"PHP":                "pkg:docker/php/php",
+	"PHP": "pkg:docker/php/php",
 	// pkg:generic/bun – bun is a runtime/package-manager itself; no canonical package
-	"Bun":                "",
+	"Bun": "",
 	// pkg:generic/deno
-	"Deno":               "",
+	"Deno": "",
 	// pkg:npm/ghost – not a stand-alone installable npm package
-	"Ghost":              "pkg:docker/ghost/ghost",
+	"Ghost": "pkg:docker/ghost/ghost",
 	// pkg:npm/cloudflare – that's an API client library
-	"Cloudflare":         "",
+	"Cloudflare": "",
 }
+
+// ── CPE auto-assign blocklist ─────────────────────────────────────────────────
+// skipCPEAutoAssign lists technologies where the CPE dict produces a known
+// false positive (a different product that happens to share the same name).
+var skipCPEAutoAssign = map[string]bool{
+	"Ace":        true, // cpedict: cpe:2.3:a:vmware:ace (VMware virtualizer ≠ ACE editor)
+	"Amazon EC2": true, // cpedict: cpe:2.3:a:jenkins:amazon_ec2 (Jenkins plugin ≠ AWS EC2)
+	"Amazon S3":  true, // cpedict: cpe:2.3:a:easydigitaldownloads:amazon_s3 (EDD plugin ≠ AWS S3)
+	"Datadog":    true, // cpedict: cpe:2.3:a:jenkins:datadog (Jenkins plugin ≠ Datadog SaaS)
+	"Eggplant":   true, // cpedict: cpe:2.3:a:jenkins:eggplant (Jenkins plugin ≠ Eggplant testing tool)
+}
+
+// ── CPE dictionary types ───────────────────────────────────────────────────────
 
 type cpePair struct {
 	vendor  string
@@ -77,8 +132,7 @@ var (
 	domainRe = regexp.MustCompile(`https?://(?:www\.)?([^/]+)`)
 )
 
-// normalizeForMatch lowercases s and strips all non-alphanumeric characters for
-// fuzzy key comparison.
+// normalizeForMatch lowercases s and strips all non-alphanumeric characters.
 func normalizeForMatch(s string) string {
 	s = strings.ToLower(s)
 	var b strings.Builder
@@ -90,46 +144,74 @@ func normalizeForMatch(s string) string {
 	return b.String()
 }
 
-func downloadCPEDict() error {
-	log.Printf("Downloading CPE dictionary from %s...", cpeDictURL)
-	resp, err := http.Get(cpeDictURL) //nolint:noctx
+// ── CPE dict fetching ──────────────────────────────────────────────────────────
+
+func cpeCachePath(idx int) string {
+	return fmt.Sprintf("/tmp/wappalyzer_cpes_%d.csv", idx)
+}
+
+func downloadCSV(url, path string) error {
+	log.Printf("Downloading CPE source: %s", url)
+	resp, err := http.Get(url) //nolint:noctx
 	if err != nil {
-		return fmt.Errorf("downloading CPE dict: %w", err)
+		return fmt.Errorf("GET %s: %w", url, err)
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusOK {
-		return fmt.Errorf("CPE dict download: HTTP %d", resp.StatusCode)
+		return fmt.Errorf("GET %s: HTTP %d", url, resp.StatusCode)
 	}
-	f, err := os.Create(cpeDictPath)
+	f, err := os.Create(path)
 	if err != nil {
-		return fmt.Errorf("creating CPE dict file: %w", err)
+		return err
 	}
 	defer f.Close()
 	_, err = io.Copy(f, resp.Body)
 	return err
 }
 
-func loadCPEDict() (byProduct, byVendor map[string][]cpePair, err error) {
-	f, ferr := os.Open(cpeDictPath)
-	if os.IsNotExist(ferr) {
-		if dlErr := downloadCPEDict(); dlErr != nil {
-			return nil, nil, dlErr
-		}
-		f, ferr = os.Open(cpeDictPath)
-	}
-	if ferr != nil {
-		return nil, nil, ferr
-	}
-	defer f.Close()
-
+// loadCPEDicts fetches and merges all cpeDictSources into a single pair of
+// lookup maps.
+func loadCPEDicts() (byProduct, byVendor map[string][]cpePair, err error) {
 	byProduct = make(map[string][]cpePair)
 	byVendor = make(map[string][]cpePair)
 	seen := make(map[string]bool)
 
+	for i, src := range cpeDictSources {
+		path := cpeCachePath(i)
+		if _, serr := os.Stat(path); os.IsNotExist(serr) {
+			if dlErr := downloadCSV(src, path); dlErr != nil {
+				log.Printf("Skipping CPE source %s: %v", src, dlErr)
+				continue
+			}
+		}
+		if perr := parseCPECSV(path, seen, byProduct, byVendor); perr != nil {
+			log.Printf("Error parsing CPE source %s: %v", src, perr)
+		}
+	}
+
+	if len(byProduct) == 0 {
+		return nil, nil, fmt.Errorf("no CPE data loaded from any source")
+	}
+	total := 0
+	for _, p := range byProduct {
+		total += len(p)
+	}
+	log.Printf("Loaded %d CPE pairs (%d unique products) from %d source(s)",
+		total, len(byProduct), len(cpeDictSources))
+	return byProduct, byVendor, nil
+}
+
+func parseCPECSV(path string, seen map[string]bool, byProduct, byVendor map[string][]cpePair) error {
+	f, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+
 	r := csv.NewReader(f)
 	headers, err := r.Read()
 	if err != nil {
-		return nil, nil, fmt.Errorf("reading CPE CSV header: %w", err)
+		return fmt.Errorf("reading header: %w", err)
 	}
 	vendorIdx, productIdx := -1, -1
 	for i, h := range headers {
@@ -141,7 +223,7 @@ func loadCPEDict() (byProduct, byVendor map[string][]cpePair, err error) {
 		}
 	}
 	if vendorIdx < 0 || productIdx < 0 {
-		return nil, nil, fmt.Errorf("CPE CSV missing vendor/product columns, found: %v", headers)
+		return fmt.Errorf("missing vendor/product columns; found: %v", headers)
 	}
 
 	for {
@@ -154,26 +236,19 @@ func loadCPEDict() (byProduct, byVendor map[string][]cpePair, err error) {
 		}
 		vendor := strings.TrimSpace(row[vendorIdx])
 		product := strings.TrimSpace(row[productIdx])
-		pairKey := vendor + "\x00" + product
-		if seen[pairKey] {
+		key := vendor + "\x00" + product
+		if seen[key] {
 			continue
 		}
-		seen[pairKey] = true
-
+		seen[key] = true
 		pair := cpePair{vendor, product}
-		kp := normalizeForMatch(product)
-		kv := normalizeForMatch(vendor)
-		byProduct[kp] = append(byProduct[kp], pair)
-		byVendor[kv] = append(byVendor[kv], pair)
+		byProduct[normalizeForMatch(product)] = append(byProduct[normalizeForMatch(product)], pair)
+		byVendor[normalizeForMatch(vendor)] = append(byVendor[normalizeForMatch(vendor)], pair)
 	}
-
-	total := 0
-	for _, pairs := range byProduct {
-		total += len(pairs)
-	}
-	log.Printf("Loaded %d CPE pairs (%d unique products)", total, len(byProduct))
-	return byProduct, byVendor, nil
+	return nil
 }
+
+// ── CPE candidate matching ────────────────────────────────────────────────────
 
 func findCPECandidates(techName, website string, byProduct, byVendor map[string][]cpePair, maxResults int) []cpeCandidate {
 	type key struct{ v, p string }
@@ -188,15 +263,13 @@ func findCPECandidates(techName, website string, byProduct, byVendor map[string]
 
 	norm := normalizeForMatch(techName)
 
-	// 1. Exact product match
 	for _, pair := range byProduct[norm] {
 		add(pair.vendor, pair.product, "exact_product", 100)
 	}
-	// 2. Exact vendor match
 	for _, pair := range byVendor[norm] {
 		add(pair.vendor, pair.product, "exact_vendor", 90)
 	}
-	// 3. Strip common suffixes and retry
+
 	stripped := suffixRe.ReplaceAllString(norm, "")
 	if stripped != "" && stripped != norm {
 		for _, pair := range byProduct[stripped] {
@@ -206,7 +279,7 @@ func findCPECandidates(techName, website string, byProduct, byVendor map[string]
 			add(pair.vendor, pair.product, "stripped_vendor", 75)
 		}
 	}
-	// 4. Substring matches (only for names ≥ 4 chars to avoid noise)
+
 	if len(norm) >= 4 {
 		for k, pairs := range byProduct {
 			if strings.Contains(k, norm) && k != norm {
@@ -220,7 +293,7 @@ func findCPECandidates(techName, website string, byProduct, byVendor map[string]
 			}
 		}
 	}
-	// 5. Website domain heuristic
+
 	if website != "" {
 		if m := domainRe.FindStringSubmatch(website); len(m) > 1 {
 			parts := strings.Split(m[1], ".")
@@ -261,85 +334,172 @@ func buildCPEString(vendor, product string) string {
 	return fmt.Sprintf("cpe:2.3:a:%s:%s:*:*:*:*:*:*:*:*", vendor, product)
 }
 
-// mineAndUpdateEnrichment downloads the CPE dictionary, finds missing CPEs for
-// all technologies (auto-confirming only single exact matches to avoid false
-// positives), applies PURL corrections, writes the updated enrichment.json, and
-// returns the updated in-memory enrichment map for immediate use.
-func mineAndUpdateEnrichment(apps map[string]Fingerprint, enrichment map[string]Enrichment, enrichmentPath string) map[string]Enrichment {
-	byProduct, byVendor, err := loadCPEDict()
+// ── Main enrichment entry point ───────────────────────────────────────────────
+
+// mineCPEsAndPURLs computes in-memory enrichment by combining three layers:
+//
+//  1. Auto-mined CPEs from cpeDictSources (fill gaps only; upstream always wins).
+//  2. PURL corrections from purlCorrections (override wrong upstream PURLs).
+//  3. PURL discovery via purlSources (e.g. npm registry; fill gaps only).
+//
+// The caller's `manual` map (loaded from enrichment.json) is merged last and
+// wins over everything.  Nothing is written to disk.
+func mineCPEsAndPURLs(apps map[string]Fingerprint, manual map[string]Enrichment, discoverPURLs bool) map[string]Enrichment {
+	result := make(map[string]Enrichment, len(apps))
+
+	// Layer 1 – auto-mine CPEs from dictionary sources
+	byProduct, byVendor, err := loadCPEDicts()
 	if err != nil {
 		log.Printf("CPE mining skipped: %v", err)
-		return enrichment
-	}
-
-	changed := 0
-
-	// Find technologies without a CPE and auto-confirm single exact matches.
-	for techName, app := range apps {
-		if skipCPEAutoAssign[techName] {
-			continue
-		}
-		existing := enrichment[techName]
-		if app.CPE != "" || existing.CPE != "" {
-			continue
-		}
-		candidates := findCPECandidates(techName, app.Website, byProduct, byVendor, 3)
-		var exact []cpeCandidate
-		for _, c := range candidates {
-			if c.reason == "exact_product" || c.reason == "exact_vendor" {
-				exact = append(exact, c)
-			}
-		}
-		if len(exact) == 1 {
-			cpe := buildCPEString(exact[0].vendor, exact[0].product)
-			e := enrichment[techName]
-			e.CPE = cpe
-			enrichment[techName] = e
-			changed++
-			log.Printf("CPE added  %-40s  %s", techName, cpe)
-		}
-	}
-
-	// Apply hard-coded PURL corrections.
-	for name, newPURL := range purlCorrections {
-		e := enrichment[name]
-		if newPURL == "" {
-			if e.PURL != "" {
-				e.PURL = ""
-				enrichment[name] = e
-				changed++
-				log.Printf("PURL removed  %s", name)
-			}
-		} else if e.PURL != newPURL {
-			e.PURL = newPURL
-			enrichment[name] = e
-			changed++
-			log.Printf("PURL updated  %-40s  %s", name, newPURL)
-		}
-	}
-
-	// Drop entries that are now fully empty.
-	for k, v := range enrichment {
-		if v.CPE == "" && v.PURL == "" {
-			delete(enrichment, k)
-		}
-	}
-
-	if changed == 0 {
-		log.Printf("No enrichment changes (CPE dict already applied)")
-		return enrichment
-	}
-
-	// encoding/json sorts map keys alphabetically, so the output is stable.
-	data, err := json.MarshalIndent(enrichment, "", "    ")
-	if err != nil {
-		log.Printf("Could not marshal enrichment: %v", err)
-		return enrichment
-	}
-	if err := os.WriteFile(enrichmentPath, data, 0o666); err != nil {
-		log.Printf("Could not write enrichment file: %v", err)
 	} else {
-		log.Printf("Wrote %d enrichment changes to %s", changed, enrichmentPath)
+		added := 0
+		for techName, app := range apps {
+			if skipCPEAutoAssign[techName] {
+				continue
+			}
+			// Only fill gaps: skip if upstream or manual already has a CPE
+			manualEntry := manual[techName]
+			if app.CPE != "" || manualEntry.CPE != "" {
+				continue
+			}
+			candidates := findCPECandidates(techName, app.Website, byProduct, byVendor, 3)
+			var exact []cpeCandidate
+			for _, c := range candidates {
+				if c.reason == "exact_product" || c.reason == "exact_vendor" {
+					exact = append(exact, c)
+				}
+			}
+			if len(exact) == 1 {
+				e := result[techName]
+				e.CPE = buildCPEString(exact[0].vendor, exact[0].product)
+				result[techName] = e
+				added++
+			}
+		}
+		log.Printf("Auto-assigned %d CPEs from dictionary", added)
 	}
-	return enrichment
+
+	// Layer 2 – apply PURL corrections (override upstream wrong PURLs)
+	for name, newPURL := range purlCorrections {
+		e := result[name]
+		e.PURL = newPURL // "" means "remove the upstream PURL"
+		result[name] = e
+	}
+
+	// Layer 3 – PURL discovery via external sources (opt-in, fills gaps only)
+	if discoverPURLs {
+		discoverMissingPURLs(apps, manual, result)
+	}
+
+	// Layer 4 – manual enrichment.json wins over everything above
+	for techName, m := range manual {
+		e := result[techName]
+		if m.CPE != "" {
+			e.CPE = m.CPE
+		}
+		if m.PURL != "" {
+			e.PURL = m.PURL
+		}
+		result[techName] = e
+	}
+
+	// Drop entries that ended up fully empty
+	for k, v := range result {
+		if v.CPE == "" && v.PURL == "" {
+			delete(result, k)
+		}
+	}
+
+	return result
+}
+
+// discoverMissingPURLs runs each purlSource in purlSources concurrently for
+// technologies that still have no PURL after corrections.  Results fill gaps
+// only; they never override upstream or manual data.
+func discoverMissingPURLs(apps map[string]Fingerprint, manual map[string]Enrichment, result map[string]Enrichment) {
+	type work struct {
+		name string
+		fp   Fingerprint
+	}
+	var jobs []work
+	for techName, app := range apps {
+		// skip if upstream, manual, or a correction already provides a PURL
+		if app.PURL != "" {
+			continue
+		}
+		if m := manual[techName]; m.PURL != "" {
+			continue
+		}
+		if r := result[techName]; r.PURL != "" {
+			continue
+		}
+		jobs = append(jobs, work{techName, app})
+	}
+
+	type result_ struct {
+		name string
+		purl string
+	}
+
+	const workers = 20
+	jobCh := make(chan work, len(jobs))
+	resCh := make(chan result_, len(jobs))
+
+	var wg sync.WaitGroup
+	for i := 0; i < workers; i++ {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for j := range jobCh {
+				for _, src := range purlSources {
+					if p := src(j.name, j.fp); p != "" {
+						resCh <- result_{j.name, p}
+						break
+					}
+				}
+			}
+		}()
+	}
+
+	for _, j := range jobs {
+		jobCh <- j
+	}
+	close(jobCh)
+
+	go func() {
+		wg.Wait()
+		close(resCh)
+	}()
+
+	found := 0
+	for r := range resCh {
+		e := result[r.name]
+		e.PURL = r.purl
+		result[r.name] = e
+		found++
+	}
+	if found > 0 {
+		log.Printf("Discovered %d PURLs via registry sources", found)
+	}
+}
+
+// printEnrichmentStats logs a human-readable summary of the enrichment map.
+func printEnrichmentStats(result map[string]Enrichment, totalApps int) {
+	withCPE, withPURL := 0, 0
+	for _, e := range result {
+		if e.CPE != "" {
+			withCPE++
+		}
+		if e.PURL != "" {
+			withPURL++
+		}
+	}
+	log.Printf("Enrichment totals: %d CPEs, %d PURLs (out of %d technologies)",
+		withCPE, withPURL, totalApps)
+}
+
+// marshalEnrichmentJSON serialises the enrichment map with sorted keys for
+// stable, diffable output.  Exported so callers can write it to disk if needed.
+func marshalEnrichmentJSON(m map[string]Enrichment) ([]byte, error) {
+	return json.MarshalIndent(m, "", "    ")
 }
