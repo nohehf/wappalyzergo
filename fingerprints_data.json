@@ -307,6 +307,7 @@
             ],
             "description": "8base is a low-code development platform for building and running enterprise-grade digital products including SaaS solutions, marketplaces and other go-to-market applications.",
             "website": "https://8base.com",
+            "purl": "pkg:npm/8base",
             "icon": "8base.svg"
         },
         "8x8": {
@@ -371,6 +372,7 @@
                 "web.startComponents": ""
             },
             "website": "https://github.com/sulu/web-js",
+            "purl": "pkg:npm/@sulu/web",
             "icon": "Sulu.svg"
         },
         "A-Frame": {
@@ -642,6 +644,7 @@
             ],
             "description": "ANS is a UK-based IT services company specializing in cloud computing, managed services, and digital transformation solutions.",
             "website": "https://www.ans.co.uk",
+            "purl": "pkg:npm/ans",
             "icon": "ANS.svg"
         },
         "AOLserver": {
@@ -675,6 +678,7 @@
             ],
             "description": "JavaScript library to animate elements on your page as you scroll.",
             "website": "https://michalsnik.github.io/aos/",
+            "purl": "pkg:npm/aos",
             "icon": "AOS.svg"
         },
         "APC": {
@@ -3129,6 +3133,7 @@
             },
             "description": "Agora is a real-time engagement platform that provides infrastructure for interactive communication across applications.",
             "website": "https://www.agora.io",
+            "purl": "pkg:npm/agora",
             "icon": "Agora.svg"
         },
         "Agorize": {
@@ -3784,6 +3789,7 @@
             ],
             "description": "AlertifyJS is a javascript framework for developing browser dialogs and notifications.",
             "website": "https://alertifyjs.com",
+            "purl": "pkg:npm/alertifyjs",
             "icon": "AlertifyJS.png"
         },
         "Alexa Certified Site Metrics": {
@@ -4132,6 +4138,7 @@
                 "YUI"
             ],
             "website": "https://www.alloyui.com",
+            "purl": "pkg:npm/alloyui",
             "icon": "AlloyUI.png"
         },
         "Allstate": {
@@ -5866,6 +5873,7 @@
             "description": "Appian is an enterprise low-code application platform.",
             "website": "https://www.appian.com",
             "cpe": "cpe:2.3:a:appian:business_process_management_suite:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/appian",
             "icon": "Appian.svg"
         },
         "Appier": {
@@ -7494,6 +7502,7 @@
             ],
             "description": "Aurelia is an open-source UI JavaScript framework designed to create single page applications.",
             "website": "https://aurelia.io",
+            "purl": "pkg:npm/aurelia",
             "icon": "Aurelia.svg"
         },
         "Auryc": {
@@ -8163,6 +8172,7 @@
             },
             "description": "Azure is a cloud computing service for building, testing, deploying, and managing applications and services through Microsoft-managed data centers.",
             "website": "https://azure.microsoft.com",
+            "purl": "pkg:npm/azure",
             "icon": "Azure.svg"
         },
         "Azure AD B2C": {
@@ -8332,6 +8342,7 @@
             ],
             "description": "BEM (Block, Element, Modifier) is a naming convention for classes in HTML and CSS what was developed by Yandex.",
             "website": "https://en.bem.info",
+            "purl": "pkg:npm/bem",
             "icon": "BEM.png"
         },
         "BIGACE": {
@@ -8678,7 +8689,8 @@
                 "(?:((?:\\d+\\.)+\\d+)\\/)?(?:jquery\\.)?backstretch(?:\\.min)?\\.js\\;version:\\1"
             ],
             "description": "A simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element.",
-            "website": "https://www.jquery-backstretch.com/"
+            "website": "https://www.jquery-backstretch.com/",
+            "purl": "pkg:npm/backstretch"
         },
         "Bag": {
             "cats": [
@@ -8903,6 +8915,7 @@
             },
             "description": "Barba.js is a small and easy-to-use javascript library that helps you creating fluid and smooth transitions between your website's pages.",
             "website": "https://barba.js.org",
+            "purl": "pkg:npm/barba.js",
             "icon": "Barba.js.png"
         },
         "Baremetrics": {
@@ -9136,6 +9149,7 @@
             ],
             "description": "Batman.js is a framework for building rich web applications using CoffeeScript or JavaScript.",
             "website": "https://batmanjs.org",
+            "purl": "pkg:npm/batman.js",
             "icon": "BatmanJS.svg"
         },
         "Baya": {
@@ -10869,7 +10883,8 @@
             "implies": [
                 "Google Analytics"
             ],
-            "website": "https://boba.space150.com"
+            "website": "https://boba.space150.com",
+            "purl": "pkg:npm/boba.js"
         },
         "Boberdoo": {
             "cats": [
@@ -11685,6 +11700,7 @@
             "description": "boomerang is a JavaScript library that measures the page load time experienced by real users, commonly called RUM (Real User Measurement).",
             "website": "https://akamai.github.io/boomerang",
             "cpe": "cpe:2.3:a:nationaledtech:boomerang:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/boomerang",
             "icon": "boomerang.svg"
         },
         "Boost Commerce": {
@@ -11744,6 +11760,7 @@
             "description": "Bootbox.js is a small JavaScript library which allows you to create custom modal dialogs using Bootstrap modals, without having to worry about creating, managing, or removing any of the required DOM elements or JavaScript event handlers.",
             "website": "https://bootboxjs.com/",
             "cpe": "cpe:2.3:a:bootboxjs:bootbox:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/bootbox.js",
             "icon": "Bootbox.js.png"
         },
         "Bootic": {
@@ -12586,6 +12603,7 @@
             },
             "description": "Brimble is a cloud platform for deploying frontend web applications.",
             "website": "https://brimble.io",
+            "purl": "pkg:npm/brimble",
             "icon": "brimble.svg"
         },
         "Bringie": {
@@ -13349,6 +13367,7 @@
             ],
             "description": "D3 based reusable chart library",
             "website": "https://c3js.org/",
+            "purl": "pkg:npm/c3.js",
             "icon": "C3.js.png"
         },
         "CAPYS": {
@@ -14214,6 +14233,7 @@
             ],
             "description": "CanJS is an MIT-licensed client-side JavaScript framework used for building maintainable and performant web applications.",
             "website": "https://canjs.com",
+            "purl": "pkg:npm/canjs",
             "icon": "CanJS.svg"
         },
         "Candid": {
@@ -14795,6 +14815,7 @@
             ],
             "description": "Cart.js is a very small open-source Javascript library that makes the addition of powerful Ajax cart functionality to your Shopify theme a breeze.",
             "website": "https://cartjs.org",
+            "purl": "pkg:npm/cart.js",
             "icon": "Cart.js.png"
         },
         "CartBot": {
@@ -15412,6 +15433,7 @@
             },
             "description": "Chai is a BDD / TDD assertion library for node and the browser that can be paired with any javascript testing framework.",
             "website": "https://www.chaijs.com",
+            "purl": "pkg:npm/chai",
             "icon": "Chai.svg"
         },
         "Chakra UI": {
@@ -15629,6 +15651,7 @@
             "description": "Chaser is a telephone callback system designed to connect users by initiating return calls through a central server.",
             "website": "https://chaser.ru",
             "cpe": "cpe:2.3:a:jowood_productions:chaser:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/chaser",
             "icon": "Chaser.svg"
         },
         "Chat Chasers": {
@@ -16297,6 +16320,7 @@
             ],
             "description": "Choices.js is a lightweight, configurable select box/text input plugin.",
             "website": "https://github.com/Choices-js/Choices",
+            "purl": "pkg:npm/choices",
             "icon": "Choices.png"
         },
         "Chord": {
@@ -16342,7 +16366,8 @@
             ],
             "description": "Chosen is a jQuery plugin that makes long, unwieldy select boxes much more user-friendly.",
             "website": "https://harvesthq.github.io/chosen/",
-            "cpe": "cpe:2.3:a:getharvest:chosen:*:*:*:*:*:*:*:*"
+            "cpe": "cpe:2.3:a:getharvest:chosen:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/chosen"
         },
         "Chronofresh": {
             "cats": [
@@ -16714,7 +16739,8 @@
                 "classnames\\.?\\w{0,20}(?:\\.chunk)?\\.js"
             ],
             "description": "Javascript utility for conditionally joining classNames together.",
-            "website": "https://jedwatson.github.io/classnames/"
+            "website": "https://jedwatson.github.io/classnames/",
+            "purl": "pkg:npm/classnames"
         },
         "Classy": {
             "cats": [
@@ -16855,7 +16881,8 @@
                 "cleave(?:\\.min)?(?:\\.\\w{0,32})?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "JavaScript library for formatting input text content when you are typing.",
-            "website": "https://nosir.github.io/cleave.js/"
+            "website": "https://nosir.github.io/cleave.js/",
+            "purl": "pkg:npm/cleave.js"
         },
         "Cleeng": {
             "cats": [
@@ -17384,6 +17411,7 @@
             ],
             "description": "ClientJS is a JavaScript library for generating browser fingerprints, exposing all the browser data-points.",
             "website": "https://clientjs.org",
+            "purl": "pkg:npm/clientjs",
             "icon": "ClientJS.png"
         },
         "ClientXCMS": {
@@ -17506,6 +17534,7 @@
                 "clipboard(?:-([\\d.]+))?(?:\\.min)?\\.js\\;version:\\1"
             ],
             "website": "https://clipboardjs.com/",
+            "purl": "pkg:npm/clipboard.js",
             "icon": "Clipboard.js.svg"
         },
         "Clock PMS": {
@@ -21744,6 +21773,7 @@
             ],
             "description": "DHTMLX specialises in building JavaScript UI libraries for project management, event planning, big data visualisation, and reporting.",
             "website": "https://dhtmlx.com",
+            "purl": "pkg:npm/dhtmlx",
             "icon": "DHTMLX.png"
         },
         "DISH": {
@@ -22406,6 +22436,7 @@
             ],
             "description": "Datastar is a lightweight framework for developing websites and real-time collaborative web applications.",
             "website": "https://data-star.dev",
+            "purl": "pkg:npm/datastar",
             "icon": "Datastar.svg"
         },
         "Datatrics": {
@@ -23019,6 +23050,7 @@
             },
             "description": "Deta is a cloud platform for building and deploying apps.",
             "website": "https://deta.sh",
+            "purl": "pkg:npm/deta",
             "icon": "deta.svg"
         },
         "Detectify": {
@@ -23979,6 +24011,7 @@
             ],
             "website": "https://dojotoolkit.org",
             "cpe": "cpe:2.3:a:dojotoolkit:dojo:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/dojo",
             "icon": "Dojo.png"
         },
         "Dokan": {
@@ -24807,6 +24840,7 @@
             },
             "description": "Dropzone is a JavaScript library that turns any HTML element into a dropzone.",
             "website": "https://www.dropzone.dev",
+            "purl": "pkg:npm/dropzone",
             "icon": "Dropzone.svg"
         },
         "Droxit": {
@@ -25134,6 +25168,7 @@
             ],
             "description": "Javascript library to create physics-related animations",
             "website": "https://dynamicsjs.com",
+            "purl": "pkg:npm/dynamics.js",
             "icon": "Dynamics.js.png"
         },
         "Dynamicweb": {
@@ -25509,6 +25544,7 @@
             ],
             "description": "EaselJS is a JavaScript library designed to simplify working with the HTML5 Canvas element, making it useful for creating games, generative art, and other graphical applications.",
             "website": "https://createjs.com/easeljs",
+            "purl": "pkg:npm/easeljs",
             "icon": "EaselJS.svg"
         },
         "EasiChat": {
@@ -26665,7 +26701,8 @@
                 "elliptic(?:[\\w\\.-]{0,27})?(?:\\.bundle)?(?:\\.chunk)?(?:\\.min)?\\.js"
             ],
             "description": "Fast Elliptic Curve Cryptography in plain javascript.",
-            "website": "https://github.com/indutny/elliptic"
+            "website": "https://github.com/indutny/elliptic",
+            "purl": "pkg:npm/elliptic"
         },
         "Elloha": {
             "cats": [
@@ -27368,7 +27405,8 @@
                 "enquire(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "enquire.js is a lightweight, pure JavaScript library for responding to CSS media queries.",
-            "website": "https://wicky.nillia.ms/enquire.js/"
+            "website": "https://wicky.nillia.ms/enquire.js/",
+            "purl": "pkg:npm/enquire.js"
         },
         "Enquisite": {
             "cats": [
@@ -27573,6 +27611,7 @@
             ],
             "description": "Enyo is an open-source JavaScript framework for cross-platform for mobile, desktop, TV and web applications.",
             "website": "https://enyojs.com",
+            "purl": "pkg:npm/enyo",
             "icon": "Enyo.png"
         },
         "Enzuzo": {
@@ -27949,6 +27988,7 @@
             },
             "description": "Ethers is a complete, tiny and simple Ethereum library.",
             "website": "https://ethers.org/",
+            "purl": "pkg:npm/ethers",
             "icon": "Ethers.svg"
         },
         "EthicalAds": {
@@ -28496,6 +28536,7 @@
             ],
             "website": "https://www.sencha.com",
             "cpe": "cpe:2.3:a:sencha:ext_js:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/extjs",
             "icon": "ExtJS.png"
         },
         "Extend": {
@@ -29113,6 +29154,7 @@
             "description": "FancyBox is a tool for displaying images, html content and multi-media in a Mac-style 'lightbox' that floats overtop of web page.",
             "website": "https://fancyapps.com/fancybox",
             "cpe": "cpe:2.3:a:colorlib:fancybox:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/fancybox",
             "icon": "FancyBox.svg"
         },
         "Fanplayr": {
@@ -29891,6 +29933,7 @@
             ],
             "description": "FilePond is a JavaScript library for file uploads.",
             "website": "https://pqina.nl/filepond/",
+            "purl": "pkg:npm/filepond",
             "icon": "filepond.svg"
         },
         "Fileflare": {
@@ -30066,6 +30109,7 @@
             },
             "description": "Fing is a cloud service to deploy and manage your applications without being worried about your infrastructure and environment.",
             "website": "https://fing.ir",
+            "purl": "pkg:npm/fing",
             "icon": "Fing.svg"
         },
         "FingerprintJS": {
@@ -30085,6 +30129,7 @@
             ],
             "description": "FingerprintJS is a browser fingerprinting library that queries browser attributes and computes a hashed visitor identifier from them.",
             "website": "https://fingerprintjs.com",
+            "purl": "pkg:npm/fingerprintjs",
             "icon": "FingerprintJS.svg"
         },
         "Finsweet": {
@@ -30692,7 +30737,8 @@
                 "flickity(?:/|@)([\\d\\.]+).+flickity(?:\\.pkgd)?(?:\\.min)?\\.js\\;version:\\1"
             ],
             "description": "Flickity is a JavaScript slider library, built by David DeSandro of Metafizzy fame.",
-            "website": "https://flickity.metafizzy.co"
+            "website": "https://flickity.metafizzy.co",
+            "purl": "pkg:npm/flickity"
         },
         "Flip": {
             "cats": [
@@ -31299,6 +31345,7 @@
                 "WordPress"
             ],
             "website": "https://getflywheel.com",
+            "purl": "pkg:npm/flywheel",
             "icon": "flywheel.svg"
         },
         "Flyzoo": {
@@ -31479,6 +31526,7 @@
             },
             "description": "FooTable is a jQuery plugin that converts HTML tables into expandable responsive tables.",
             "website": "https://fooplugins.github.io/FooTable/index.html",
+            "purl": "pkg:npm/footable",
             "icon": "FooPlugins.svg"
         },
         "Food-Ordering.co.uk": {
@@ -31977,6 +32025,7 @@
             "description": "Formstone is a front-end library that simplifies web development by providing customizable jQuery plugins that abstract modern web patterns.",
             "website": "https://formstone.it",
             "cpe": "cpe:2.3:a:formstone:formstone:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/formstone",
             "icon": "Formstone.svg"
         },
         "Formtoro": {
@@ -32448,6 +32497,7 @@
             },
             "description": "Fresco is a responsive lightbox. Fresco comes with thumbnail support, fullscreen zoom, Youtube and Vimeo integration for HTML5 video and a powerful Javascript API.",
             "website": "https://github.com/staaky/fresco",
+            "purl": "pkg:npm/fresco",
             "icon": "default.svg"
         },
         "Fresh": {
@@ -32820,6 +32870,7 @@
             ],
             "description": "Frontity is a React open-source framework focused on WordPress.",
             "website": "https://frontity.org",
+            "purl": "pkg:npm/frontity",
             "icon": "frontity.png"
         },
         "Frontlead": {
@@ -34513,6 +34564,7 @@
             ],
             "description": "Gijgo is a set of free for commercial use javascript controls.",
             "website": "https://gijgo.com",
+            "purl": "pkg:npm/gijgo",
             "icon": "Gijgo.svg"
         },
         "Giosg": {
@@ -34834,6 +34886,7 @@
             ],
             "description": "Glance is a screen sharing and co-browsing solution for sales, service, and support.",
             "website": "https://www.glance.cx",
+            "purl": "pkg:npm/glance",
             "icon": "Glance.svg"
         },
         "GlassFish": {
@@ -34942,6 +34995,7 @@
             ],
             "description": "Glide.js is a dependency-free JavaScript ES6 slider and carousel.",
             "website": "https://glidejs.com",
+            "purl": "pkg:npm/glide.js",
             "icon": "Glide.js.svg"
         },
         "Glider.js": {
@@ -34961,6 +35015,7 @@
             ],
             "description": "Glitch is a collaborative programming environment that lives in your browser and deploys code as you type.",
             "website": "https://glitch.com",
+            "purl": "pkg:npm/glitch",
             "icon": "Glitch.svg"
         },
         "GlitchTip": {
@@ -35713,6 +35768,7 @@
             },
             "description": "Goober is a minified CSS-in-JS styling solution.",
             "website": "https://goober.js.org",
+            "purl": "pkg:npm/goober",
             "icon": "Goober.svg"
         },
         "GoodAPI": {
@@ -36843,7 +36899,8 @@
                 "jQuery"
             ],
             "description": "Gridster is a jQuery plugin used to draw dashboards with drag-and-drop widgets.",
-            "website": "https://dsmorse.github.io/gridster.js"
+            "website": "https://dsmorse.github.io/gridster.js",
+            "purl": "pkg:npm/gridster"
         },
         "Grin": {
             "cats": [
@@ -37928,6 +37985,7 @@
                 "head\\.(?:core|load)(?:\\.min)?\\.js"
             ],
             "website": "https://headjs.com",
+            "purl": "pkg:npm/headjs",
             "icon": "HeadJS.png"
         },
         "Header Bidding Ai": {
@@ -37970,7 +38028,8 @@
                 "headroom(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "Headroom.js is a JS widget that allows you to react to the user's scroll. The header slides out of view when scrolling down and slides back in when scrolling up.",
-            "website": "https://wicky.nillia.ms/headroom.js/"
+            "website": "https://wicky.nillia.ms/headroom.js/",
+            "purl": "pkg:npm/headroom.js"
         },
         "Headway": {
             "cats": [
@@ -38418,6 +38477,7 @@
             },
             "description": "Hetzner provides dedicated hosting, shared web hosting, virtual private servers, managed servers, domain names, SSL certificates, storage boxes, and cloud.",
             "website": "https://www.hetzner.com",
+            "purl": "pkg:npm/hetzner",
             "icon": "Hetzner.svg"
         },
         "Hexia": {
@@ -38750,6 +38810,7 @@
             ],
             "website": "https://highlightjs.org/",
             "cpe": "cpe:2.3:a:highlightjs:highlight.js:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/highlight.js",
             "icon": "Highlight.js.png"
         },
         "Highstock": {
@@ -38959,6 +39020,7 @@
                 "hogan-[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1"
             ],
             "website": "https://twitter.github.io/hogan.js/",
+            "purl": "pkg:npm/hogan.js",
             "icon": "Hogan.js.png"
         },
         "Hoiio": {
@@ -39422,6 +39484,7 @@
             ],
             "description": "Howler.js is an audio library with support for the Web Audio API and a fallback mechanism for HTML5 Audio.",
             "website": "https://howlerjs.com",
+            "purl": "pkg:npm/howler.js",
             "icon": "Howler.js.svg"
         },
         "HrFlow.ai": {
@@ -39955,6 +40018,7 @@
             "description": "Hydrogen is a front-end web development framework used for building Shopify custom storefronts.",
             "website": "https://hydrogen.shopify.dev",
             "cpe": "cpe:2.3:a:shopify:hydrogen:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/hydrogen",
             "icon": "Hydrogen.svg"
         },
         "HypeLab": {
@@ -40806,6 +40870,7 @@
                 "^immutable\\.(?:min\\.)?js$"
             ],
             "website": "https://facebook.github.io/immutable-js/",
+            "purl": "pkg:npm/immutable.js",
             "icon": "Immutable.js.png"
         },
         "Impact": {
@@ -41188,6 +41253,7 @@
                 "Inferno.version": "^(.+)$\\;version:\\1"
             },
             "website": "https://infernojs.org",
+            "purl": "pkg:npm/infernojs",
             "icon": "InfernoJS.png"
         },
         "Infinite Scroll": {
@@ -41586,7 +41652,8 @@
                 "instafeed(?:\\.min)?\\.js"
             ],
             "description": "A way to add Instagram photos to your website.",
-            "website": "https://instafeedjs.com/"
+            "website": "https://instafeedjs.com/",
+            "purl": "pkg:npm/instafeed.js"
         },
         "Instagram Feed for WordPress": {
             "cats": [
@@ -41663,6 +41730,7 @@
             ],
             "description": "Instant.Page is a JavaScript library which uses just-in-time preloading technique to make websites faster.",
             "website": "https://instant.page/",
+            "purl": "pkg:npm/instant.page",
             "icon": "Instant.page.svg"
         },
         "InstantCMS": {
@@ -41697,6 +41765,7 @@
             ],
             "description": "InstantClick is a JavaScript library that speeds up your website, making navigation faster.",
             "website": "https://instantclick.io/",
+            "purl": "pkg:npm/instantclick",
             "icon": "InstantClick.svg"
         },
         "InstantGeo": {
@@ -42245,6 +42314,7 @@
             },
             "description": "Isotope.js is a JavaScript library that makes it easy to sort, filter, and add Masonry layouts to items on a webpage.",
             "website": "https://isotope.metafizzy.co",
+            "purl": "pkg:npm/isotope",
             "icon": "Isotope.svg"
         },
         "Isso": {
@@ -42541,6 +42611,7 @@
             },
             "description": "JSS is an authoring tool for CSS which allows you to use JavaScript to describe styles in a declarative, conflict-free and reusable way.",
             "website": "https://cssinjs.org/",
+            "purl": "pkg:npm/jss",
             "icon": "JSS.png"
         },
         "JSZip": {
@@ -42555,7 +42626,8 @@
             ],
             "description": "JSZip is a JavaScript library that enables the creation, reading, and manipulation of zip files in a browser environment.",
             "website": "https://stuk.github.io/jszip/",
-            "cpe": "cpe:2.3:a:jszip_project:jszip:*:*:*:*:*:*:*:*"
+            "cpe": "cpe:2.3:a:jszip_project:jszip:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/jszip"
         },
         "JShop": {
             "cats": [
@@ -43410,6 +43482,7 @@
             ],
             "description": "JsRender is the template library. The library is developed and maintained by Microsoft employee Boris Moore and is used in projects such as Outlook.com and Windows Azure.",
             "website": "https://www.jsviews.com/#jsrender",
+            "purl": "pkg:npm/jsrender",
             "icon": "JsRender.svg"
         },
         "JsViews": {
@@ -43425,6 +43498,7 @@
             ],
             "description": "JsViews is the MVVM library which provides two-way data binding for the template. The library is developed and maintained by Microsoft employee Boris Moore and is used in projects such as Outlook.com and Windows Azure.",
             "website": "https://www.jsviews.com/#jsviews",
+            "purl": "pkg:npm/jsviews",
             "icon": "JsViews.svg"
         },
         "Jubna": {
@@ -44194,6 +44268,7 @@
             ],
             "description": "Karma is a test runner for JavaScript that runs on Node.js.",
             "website": "https://karma-runner.github.io",
+            "purl": "pkg:npm/karma",
             "icon": "Karma.svg"
         },
         "Karoo Chat": {
@@ -44362,6 +44437,7 @@
             },
             "description": "Keen-Slider is a free library agnostic touch slider with native touch/swipe behavior.",
             "website": "https://keen-slider.io",
+            "purl": "pkg:npm/keen-slider",
             "icon": "keen-slider.svg"
         },
         "Keepeek": {
@@ -44800,6 +44876,7 @@
             ],
             "description": "Kinsta is a leading managed WordPress hosting provider, prioritizing speed and security.",
             "website": "https://kinsta.com",
+            "purl": "pkg:npm/kinsta",
             "icon": "kinsta.svg"
         },
         "Kintone": {
@@ -46260,6 +46337,7 @@
             "description": "The Open Source Application Delivery Platform for Kubernetes.",
             "website": "https://lagoon.sh/",
             "cpe": "cpe:2.3:a:amazee:lagoon:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/lagoon",
             "icon": "lagoon.svg"
         },
         "Landbot": {
@@ -46611,6 +46689,7 @@
             "description": "LazySizes is a JavaScript library used to delay the loading of images (iframes, scripts, etc) until they come into view.",
             "website": "https://github.com/aFarkas/lazysizes",
             "cpe": "cpe:2.3:a:lazysizes_project:lazysizes:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/lazysizes",
             "icon": "default.svg"
         },
         "LazySizes unveilhooks plugin": {
@@ -47231,6 +47310,7 @@
             },
             "description": "Lenis is a smooth scroll library to normalise the scrolling experience across devices.",
             "website": "https://lenis.studiofreight.com",
+            "purl": "pkg:npm/lenis",
             "icon": "Lenis.svg"
         },
         "Lenus": {
@@ -47581,6 +47661,7 @@
             "description": "Lightbox is small javascript library used to overlay images on top of the current page.",
             "website": "https://lokeshdhakar.com/projects/lightbox2/",
             "cpe": "cpe:2.3:a:lightbox_photo_gallery_project:lightbox_photo_gallery:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/lightbox",
             "icon": "Lightbox.png"
         },
         "Lightfolio": {
@@ -48053,6 +48134,7 @@
                 "list\\.js/\\;confidence:50"
             ],
             "website": "https://listjs.com",
+            "purl": "pkg:npm/list.js",
             "icon": "List.js.png"
         },
         "ListTrac": {
@@ -48571,6 +48653,7 @@
             },
             "description": "Loadable-Components is a library to solve the React code-splitting client-side and server-side.",
             "website": "https://github.com/gregberge/loadable-components",
+            "purl": "pkg:npm/loadable-components",
             "icon": "Loadable-Components.png"
         },
         "Loadify": {
@@ -50416,6 +50499,7 @@
             ],
             "description": "Mailcheck is a JavaScript library designed to address the issue of misspelled email addresses during user input.",
             "website": "https://github.com/mailcheck/mailcheck",
+            "purl": "pkg:npm/mailcheck",
             "icon": "Mailcheck.png"
         },
         "MailerLite": {
@@ -51203,6 +51287,7 @@
             ],
             "website": "https://marked.js.org",
             "cpe": "cpe:2.3:a:marked_project:marked:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/marked",
             "icon": "Marked.svg"
         },
         "Marker": {
@@ -51407,7 +51492,8 @@
                 "Masonry.Item": ""
             },
             "description": "Masonry is a JavaScript library that enables a cascading grid layout, positioning elements based on available vertical space for an optimized, gap-free arrangement.",
-            "website": "https://masonry.desandro.com"
+            "website": "https://masonry.desandro.com",
+            "purl": "pkg:npm/masonry"
         },
         "Massflow": {
             "cats": [
@@ -51771,6 +51857,7 @@
             "description": "Mavo is a JavaScript library that enables web developers to turn regular HTML into reactive web applications without the need for writing custom JavaScript.",
             "website": "https://mavo.io",
             "cpe": "cpe:2.3:a:mavo:mavo:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/mavo",
             "icon": "default.svg"
         },
         "Max Mega Menu": {
@@ -53604,6 +53691,7 @@
             ],
             "description": "Mirus is a platform that provides scalable solutions capable of adjusting capacity to meet demand while maintaining resilience against unexpected challenges.",
             "website": "https://mirusresearch.com",
+            "purl": "pkg:npm/mirus",
             "icon": "Mirus.svg"
         },
         "Mirvac": {
@@ -53735,6 +53823,7 @@
             ],
             "description": "A CSS3 and jQuery Filter \u0026 Sort Plugin.",
             "website": "https://www.kunkalabs.com/mixitup/",
+            "purl": "pkg:npm/mixitup",
             "icon": "kunkalabs.svg"
         },
         "Mixpanel": {
@@ -53957,6 +54046,7 @@
             ],
             "description": "Modernizr is a JavaScript library that detects the features available in a user's browser.",
             "website": "https://modernizr.com",
+            "purl": "pkg:npm/modernizr",
             "icon": "Modernizr.svg"
         },
         "ModiFace": {
@@ -54573,6 +54663,7 @@
                 "mootools.*\\.js"
             ],
             "website": "https://mootools.net",
+            "purl": "pkg:npm/mootools",
             "icon": "MooTools.png"
         },
         "Moodle": {
@@ -54613,7 +54704,8 @@
             },
             "description": "Moofx is a CSS3-enabled JavaScript animation library for creating and managing lightweight, hardware-accelerated animations.",
             "website": "https://github.com/kamicane/moofx",
-            "cpe": "cpe:2.3:a:mad4milk:moo.fx:*:*:*:*:*:*:*:*"
+            "cpe": "cpe:2.3:a:mad4milk:moo.fx:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/moofx"
         },
         "Moon": {
             "cats": [
@@ -54623,6 +54715,7 @@
                 "/moon(?:\\.min)?\\.js$"
             ],
             "website": "https://kbrsh.github.io/moon/",
+            "purl": "pkg:npm/moon",
             "icon": "moon.svg"
         },
         "Moon Organizer": {
@@ -54767,6 +54860,7 @@
             ],
             "description": "Morphext is a lightweight jQuery plugin that rotates text using Animate.css transitions for smooth, dynamic visual effects.",
             "website": "https://morphext.fyianlai.com/",
+            "purl": "pkg:npm/morphext",
             "icon": "Morphext.svg"
         },
         "Morris.js": {
@@ -54778,7 +54872,8 @@
             ],
             "description": "A JavaScript library that simplifies the process of creating interactive and responsive data visualizations on the web.",
             "website": "https://morrisjs.github.io/morris.js/",
-            "cpe": "cpe:2.3:a:morris.js_project:morris.js:*:*:*:*:*:*:*:*"
+            "cpe": "cpe:2.3:a:morris.js_project:morris.js:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/morris.js"
         },
         "Moshimo": {
             "cats": [
@@ -55183,6 +55278,7 @@
             },
             "description": "Muuri is a JavaScript layout engine that allows you to build all kinds of layouts and make them responsive, sortable, filterable, draggable and/or animated.",
             "website": "https://muuri.dev",
+            "purl": "pkg:npm/muuri",
             "icon": "Muuri.svg"
         },
         "Muvi": {
@@ -55690,6 +55786,7 @@
             ],
             "description": "NProgress is a JavaScript library that displays a nanoscopic progress bar at the top of websites or web applications. It includes trickle animations to indicate loading activity, enhancing user experience by showing that content is being loaded.",
             "website": "https://ricostacruz.com/nprogress/",
+            "purl": "pkg:npm/nprogress",
             "icon": "NProgress.svg"
         },
         "NSW Design System": {
@@ -56427,6 +56524,7 @@
             ],
             "description": "Netop is a platform that provides remote support and chat solutions for secure communication and technical assistance.",
             "website": "https://netop.com",
+            "purl": "pkg:npm/netop",
             "icon": "Netop.svg"
         },
         "Netrox": {
@@ -57522,7 +57620,8 @@
                 "notie": ""
             },
             "description": "Notie is a notification, input, and selection suite for javascript, with no dependencies.",
-            "website": "https://github.com/jaredreich/notie"
+            "website": "https://github.com/jaredreich/notie",
+            "purl": "pkg:npm/notie"
         },
         "Notifly": {
             "cats": [
@@ -59293,6 +59392,7 @@
             "description": "OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library.",
             "website": "https://opencv.org",
             "cpe": "cpe:2.3:a:opencv:opencv:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/opencv",
             "icon": "OpenCV.svg"
         },
         "OpenCart": {
@@ -61104,6 +61204,7 @@
             ],
             "description": "Packery is a JavaScript library and jQuery plugin that makes gapless and draggable layouts.",
             "website": "https://packery.metafizzy.co",
+            "purl": "pkg:npm/packery",
             "icon": "Packery.svg"
         },
         "Packlink PRO": {
@@ -61223,7 +61324,8 @@
                 "page.Route": ""
             },
             "description": "Page.js is a micro client-side router designed to handle client-side routing within web applications.",
-            "website": "https://github.com/visionmedia/page.js"
+            "website": "https://github.com/visionmedia/page.js",
+            "purl": "pkg:npm/page.js"
         },
         "PageFly": {
             "cats": [
@@ -61336,6 +61438,7 @@
                 "WordPress"
             ],
             "website": "https://pagely.com/",
+            "purl": "pkg:npm/pagely",
             "icon": "pagely.svg"
         },
         "Pagemaker": {
@@ -61563,7 +61666,8 @@
             ],
             "description": "Pannellum is a lightweight, free, and open source panorama viewer for the web.",
             "website": "https://pannellum.org/",
-            "cpe": "cpe:2.3:a:pannellum:pannellum:*:*:*:*:*:*:*:*"
+            "cpe": "cpe:2.3:a:pannellum:pannellum:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/pannellum"
         },
         "Pantheon": {
             "cats": [
@@ -61582,6 +61686,7 @@
             ],
             "description": "Pantheon is a WebOps (Website Operations) and Management Platform for WordPress and Drupal.",
             "website": "https://pantheon.io/",
+            "purl": "pkg:npm/pantheon",
             "icon": "Pantheon.svg"
         },
         "Papa Parse": {
@@ -62644,6 +62749,7 @@
             },
             "description": "PeerJS is a JavaScript library that enables WebRTC-based peer-to-peer data, video, and audio connections.",
             "website": "https://peerjs.com",
+            "purl": "pkg:npm/peerjs",
             "icon": "PeerJS.svg"
         },
         "PeerPal": {
@@ -62730,7 +62836,8 @@
                 "(?:jquery\\.)?peity(?:-demo)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "Peity is a jQuery plugin that converts an element's content into a simple mini svg pie, line or bar chart.",
-            "website": "https://benpickles.github.io/peity/"
+            "website": "https://benpickles.github.io/peity/",
+            "purl": "pkg:npm/peity"
         },
         "Pelcro": {
             "cats": [
@@ -63175,6 +63282,7 @@
                 "Phaser.VERSION": "^(.+)$\\;version:\\1"
             },
             "website": "https://phaser.io",
+            "purl": "pkg:npm/phaser",
             "icon": "Phaser.png"
         },
         "Phenom": {
@@ -63426,6 +63534,7 @@
             ],
             "description": "PhotoSwipe is an open-source gallery to support JavaScript-based image zooming.",
             "website": "https://photoswipe.com",
+            "purl": "pkg:npm/photoswipe",
             "icon": "PhotoSwipe.png"
         },
         "Photoslurp": {
@@ -63689,7 +63798,8 @@
                 "pikaday(?:-jquery)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "A refreshing JavaScript Datepicker.",
-            "website": "https://github.com/dbushell/Pikaday"
+            "website": "https://github.com/dbushell/Pikaday",
+            "purl": "pkg:npm/pikaday"
         },
         "Pilera": {
             "cats": [
@@ -64782,6 +64892,7 @@
             "description": "Plupload is a JavaScript API for dealing with file uploads.",
             "website": "https://plupload.com",
             "cpe": "cpe:2.3:a:plupload:plupload:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/plupload",
             "icon": "Plupload.svg"
         },
         "Pluralo": {
@@ -65130,6 +65241,7 @@
             ],
             "description": "Polyfill is a service which accepts a request for a set of browser features and returns only the polyfills that are needed by the requesting browser.",
             "website": "https://polyfill.io",
+            "purl": "pkg:npm/polyfill",
             "icon": "polyfill.svg"
         },
         "Polylang": {
@@ -65167,6 +65279,7 @@
                 "polymer\\.js"
             ],
             "website": "https://polymer-project.org",
+            "purl": "pkg:npm/polymer",
             "icon": "Polymer.png"
         },
         "Popcorn CRM": {
@@ -65253,6 +65366,7 @@
             ],
             "description": "Popmotion is a collection of low-level JavaScript animation functions and utils for advanced animators.",
             "website": "https://popmotion.io",
+            "purl": "pkg:npm/popmotion",
             "icon": "Popmotion.svg"
         },
         "Popper": {
@@ -66129,6 +66243,7 @@
             ],
             "description": "Pressable is a managed hoting platform for WordPress.",
             "website": "https://pressable.com",
+            "purl": "pkg:npm/pressable",
             "icon": "pressable.svg"
         },
         "Pressero": {
@@ -66868,6 +66983,7 @@
             "description": "Responsive progress bars with animated SVG paths.",
             "website": "https://kimmobrunfeldt.github.io/progressbar.js/",
             "cpe": "cpe:2.3:a:progressbar.js_project:progressbar.js:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/progressbar.js",
             "icon": "ProgressBar.js.png"
         },
         "Project Wonderful": {
@@ -67161,6 +67277,7 @@
             "description": "Prototype is a JavaScript Framework that aims to ease development of web applications.",
             "website": "https://www.prototypejs.org",
             "cpe": "cpe:2.3:a:prototypejs:prototype:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/prototype",
             "icon": "Prototype.png"
         },
         "Protovis": {
@@ -67397,6 +67514,7 @@
             },
             "description": "PubSubJS is a topic-based publish/subscribe library written in JavaScript.",
             "website": "https://github.com/mroderick/PubSubJS",
+            "purl": "pkg:npm/pubsubjs",
             "icon": "pubsub-js.png"
         },
         "PubTech": {
@@ -68559,6 +68677,7 @@
             "description": "Quasar is an open-source Vue.js based framework.",
             "website": "https://quasar.dev",
             "cpe": "cpe:2.3:a:quasar:qmarkdown:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/quasar",
             "icon": "Quasar.svg"
         },
         "Qubit": {
@@ -68764,6 +68883,7 @@
             ],
             "description": "Quicklink is a JS library which aims to be a drop-in solution for sites to prefetch links based on what is in the user's viewport.",
             "website": "https://getquick.link/",
+            "purl": "pkg:npm/quicklink",
             "icon": "Quicklink.svg"
         },
         "Quicksprout": {
@@ -69412,6 +69532,7 @@
             ],
             "description": "Railway is a cloud platform that simplifies building, deploying, and managing applications with easy setup and scalable infrastructure.",
             "website": "https://railway.app",
+            "purl": "pkg:npm/railway",
             "icon": "Railway.svg"
         },
         "Rain": {
@@ -69585,6 +69706,7 @@
             ],
             "website": "https://ramdajs.com",
             "cpe": "cpe:2.3:a:ramdajs:ramda:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/ramda",
             "icon": "Ramda.png"
         },
         "Ramper": {
@@ -70904,6 +71026,7 @@
             ],
             "description": "RedwoodJS is a full-stack serverless web application framework built by Tom Preston Werner (co-founder of Github) et al.",
             "website": "https://redwoodjs.com",
+            "purl": "pkg:npm/redwoodjs",
             "icon": "RedwoodJS.svg"
         },
         "Reelevant": {
@@ -71330,6 +71453,7 @@
             },
             "description": "Render is a cloud computing platform that provides a wide range of services, including web hosting, cloud computing, and application development. Render offers several hosting options, including static site hosting, web application hosting, and managed databases.",
             "website": "https://render.com",
+            "purl": "pkg:npm/render",
             "icon": "Render.svg"
         },
         "Render Better": {
@@ -71388,6 +71512,7 @@
             },
             "description": "Replicache is a JavaScript framework for building high-performance, offline-capable, collaborative web apps.",
             "website": "https://replicache.dev/",
+            "purl": "pkg:npm/replicache",
             "icon": "Replicache.svg"
         },
         "Replit": {
@@ -71526,6 +71651,7 @@
             ],
             "description": "RequireJS is a JavaScript library and file loader which manages the dependencies between JavaScript files and in modular programming.",
             "website": "https://requirejs.org",
+            "purl": "pkg:npm/requirejs",
             "icon": "RequireJS.svg"
         },
         "ResDiary": {
@@ -71889,7 +72015,8 @@
                 "/js/retina(\\.min)?\\.js\\?ver=([\\d\\.]+)\\;version:\\2"
             ],
             "description": "Retina.js is an open-source script designed to facilitate the delivery of high-resolution images to devices with retina displays.",
-            "website": "https://imulus.github.io/retinajs"
+            "website": "https://imulus.github.io/retinajs",
+            "purl": "pkg:npm/retina.js"
         },
         "Retisio": {
             "cats": [
@@ -72125,6 +72252,7 @@
             ],
             "website": "https://lab.hakim.se/reveal-js",
             "cpe": "cpe:2.3:a:revealjs:reveal.js:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/reveal.js",
             "icon": "Reveal.js.png"
         },
         "Revel": {
@@ -72615,6 +72743,7 @@
             },
             "description": "RightJS is a modular JavaScript framework.",
             "website": "https://github.com/rightjs",
+            "purl": "pkg:npm/rightjs",
             "icon": "RightJS.png"
         },
         "RightMessage": {
@@ -72707,6 +72836,7 @@
             ],
             "website": "https://riot.js.org/",
             "cpe": "cpe:2.3:a:riot_project:riot:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/riot",
             "icon": "Riot.png"
         },
         "Riot.js": {
@@ -72739,6 +72869,7 @@
             ],
             "description": "Ripple is the frontend framework for Single Digital Presence, delivered using Nuxt and Vue.js.",
             "website": "https://dpc-sdp.github.io/sdp-docs/ripple/",
+            "purl": "pkg:npm/ripple",
             "icon": "ripple.png"
         },
         "Rise.ai": {
@@ -73570,6 +73701,7 @@
             ],
             "description": "RunKit is a tool for prototyping server-side JavaScript.",
             "website": "https://runkit.com",
+            "purl": "pkg:npm/runkit",
             "icon": "RunKit.svg"
         },
         "Rust": {
@@ -73620,6 +73752,7 @@
             ],
             "description": "RxJS is a reactive library used to implement reactive programming to deal with async implementation, callbacks, and event-based programs.",
             "website": "https://reactivex.io",
+            "purl": "pkg:npm/rxjs",
             "icon": "RxJS.png"
         },
         "Rybbit": {
@@ -75496,6 +75629,7 @@
             ],
             "description": "ScrollMagic is a jQuery plugin which essentially lets you use the scrollbar like a playback scrub control.",
             "website": "https://scrollmagic.io",
+            "purl": "pkg:npm/scrollmagic",
             "icon": "ScrollMagic.png"
         },
         "Scully": {
@@ -76018,6 +76152,7 @@
             "description": "Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.",
             "website": "https://select2.org/",
             "cpe": "cpe:2.3:a:select2:select2:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/select2",
             "icon": "Select2.png"
         },
         "Selectize": {
@@ -76033,6 +76168,7 @@
             ],
             "description": "Selectize is an extensible jQuery-based custom \u003cselect\u003e UI control.",
             "website": "https://selectize.dev",
+            "purl": "pkg:npm/selectize",
             "icon": "Selectize.svg"
         },
         "Seline": {
@@ -77157,6 +77293,7 @@
             ],
             "description": "Shepherd is a JavaScript library which makes an use-friendly user-guide to any website.",
             "website": "https://shepherdjs.dev/",
+            "purl": "pkg:npm/shepherd",
             "icon": "Shepherd.svg"
         },
         "Sherlock": {
@@ -78471,6 +78608,7 @@
             "description": "A Markdown to HTML converter written in Javascript.",
             "website": "https://showdownjs.com/",
             "cpe": "cpe:2.3:a:showdownjs:showdown:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/showdown",
             "icon": "Showdown.png"
         },
         "Showit": {
@@ -78612,7 +78750,8 @@
                 "(?:jquery\\.)?signal[rr](?:-((?:\\d+\\.)+\\d+))?(?:\\.min)?\\.js\\;version:\\1"
             ],
             "description": "Realtime web communication framework from Microsoft for ASP.NET.",
-            "website": "https://dotnet.microsoft.com/es-es/apps/aspnet/signalr"
+            "website": "https://dotnet.microsoft.com/es-es/apps/aspnet/signalr",
+            "purl": "pkg:npm/signalr"
         },
         "SignalZen": {
             "cats": [
@@ -79309,6 +79448,7 @@
             },
             "description": "SiteGround is a web hosting service.",
             "website": "https://www.siteground.com",
+            "purl": "pkg:npm/siteground",
             "icon": "siteground.svg"
         },
         "SiteGuard WP Plugin": {
@@ -80034,6 +80174,7 @@
             ],
             "description": "Skitter is a jQuery-based slider system.",
             "website": "https://skitter-slider.net",
+            "purl": "pkg:npm/skitter",
             "icon": "Skitter.svg"
         },
         "Skolengo": {
@@ -80077,7 +80218,8 @@
                 "skrollr.VERSION": "^(.+)$\\;version:\\1"
             },
             "description": "Skrollr is a JavaScript library supporting parallax scrolling on mobile and desktop platforms in a compact 12k minified size.",
-            "website": "https://prinzhorn.github.io/skrollr/"
+            "website": "https://prinzhorn.github.io/skrollr/",
+            "purl": "pkg:npm/skrollr"
         },
         "Sky Pilot": {
             "cats": [
@@ -81319,6 +81461,7 @@
             "description": "SockJS is a browser-based JavaScript library that offers a WebSocket-like communication interface for applications.",
             "website": "https://github.com/sockjs/sockjs-client",
             "cpe": "cpe:2.3:a:sockjs_project:sockjs:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/sockjs",
             "icon": "SockJS.png"
         },
         "Socket.io": {
@@ -82368,6 +82511,7 @@
             ],
             "description": "Spin.js is a configurable JavaScript/CSS spinner serving as a resolution-independent loading indicator.",
             "website": "https://spin.js.org",
+            "purl": "pkg:npm/spin.js",
             "icon": "SpinJS.svg"
         },
         "Spine.js": {
@@ -82432,6 +82576,7 @@
             },
             "description": "Splide.js is a lightweight, responsive, and customizable slider and carousel library for JavaScript.",
             "website": "https://splidejs.com",
+            "purl": "pkg:npm/splide",
             "icon": "Splide.svg"
         },
         "Spline": {
@@ -82881,6 +83026,7 @@
             },
             "description": "SpriteSpin is a JavaScript plugin that enables users to create 360-degree image spin animations on their websites.",
             "website": "https://github.com/giniedp/spritespin",
+            "purl": "pkg:npm/spritespin",
             "icon": "SprintHub.svg"
         },
         "Sprocket": {
@@ -83765,7 +83911,8 @@
                 "stellar(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "Stellar.js is a JavaScript library and jQuery plugin specifically designed to deliver parallax scrolling effects for web pages.",
-            "website": "https://markdalgleish.com/projects/stellar.js/"
+            "website": "https://markdalgleish.com/projects/stellar.js/",
+            "purl": "pkg:npm/stellar.js"
         },
         "Stencil": {
             "cats": [
@@ -83856,6 +84003,7 @@
             },
             "description": "Stitches is a is a CSS-in-JS styling framework with near-zero runtime, SSR, and multi-variant support.",
             "website": "https://stitches.dev",
+            "purl": "pkg:npm/stitches",
             "icon": "Stitches.svg"
         },
         "Stockist": {
@@ -84270,6 +84418,7 @@
             "description": "Strato is an internet hosting service provider headquartered in Berlin, Germany which provide dedicated server hosting, a website builder and a cloud storage services.",
             "website": "https://www.strato.com",
             "cpe": "cpe:2.3:a:strato:hidrive_desktop_client:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/strato",
             "icon": "Strato.svg"
         },
         "Strato Website": {
@@ -84703,6 +84852,7 @@
             ],
             "description": "Sugar is a Javascript utility library for working with native objects.",
             "website": "https://sugarjs.com",
+            "purl": "pkg:npm/sugar",
             "icon": "Sugar.svg"
         },
         "SugarJS": {
@@ -84714,6 +84864,7 @@
             ],
             "description": "SugarJS is a JavaScript library that simplifies working with native JavaScript objects, enhancing productivity and code readability.",
             "website": "https://sugarjs.com/",
+            "purl": "pkg:npm/sugarjs",
             "icon": "SugarJS.svg"
         },
         "SugarWOD": {
@@ -85378,6 +85529,7 @@
             ],
             "description": "SweetAlert is a JavaScript library that provides alternative alert and modal dialog boxes for web applications, with customisable features, aiming to improve the user interface of the default browser dialogs.",
             "website": "https://sweetalert.js.org",
+            "purl": "pkg:npm/sweetalert",
             "icon": "SweetAlert.png"
         },
         "SweetAlert2": {
@@ -85402,6 +85554,7 @@
             ],
             "description": "SweetAlert2 is a JavaScript library that provides customisable, visually appealing, and responsive alert and modal dialog boxes for web applications.",
             "website": "https://sweetalert2.github.io/",
+            "purl": "pkg:npm/sweetalert2",
             "icon": "SweetAlert2.svg"
         },
         "SweetHelp": {
@@ -85601,6 +85754,7 @@
             ],
             "description": "Swup is a versatile and expandable library for implementing page transitions on websites that use server-side rendering.",
             "website": "https://swup.js.org",
+            "purl": "pkg:npm/swup",
             "icon": "Swup.svg"
         },
         "Swym Wishlist Plus": {
@@ -86388,7 +86542,8 @@
                 "(?:((?:\\d+\\.)+\\d+)[-\\/](?:dist\\/js\\/)?)?(?:jquery\\.)?tablesorter(?:[\\.\\/]pager)?(?:-custom-controls)?(?:\\.widgets)?(?:\\.min)?\\.js\\;version:\\1"
             ],
             "description": "Flexible client-side table sorting.",
-            "website": "https://mottie.github.io/tablesorter/"
+            "website": "https://mottie.github.io/tablesorter/",
+            "purl": "pkg:npm/tablesorter"
         },
         "Taboola": {
             "cats": [
@@ -86425,6 +86580,7 @@
             },
             "description": "Tabulator is a JavaScript tool for creating interactive tables and data grids.",
             "website": "https://tabulator.info/",
+            "purl": "pkg:npm/tabulator",
             "icon": "Tabulator.svg"
         },
         "Tachyons": {
@@ -86885,6 +87041,7 @@
             "description": "TanStack is a set of headless JavaScript libraries for building web application features such as data fetching, tables, routing, virtualization, and state management.",
             "website": "https://tanstack.com",
             "cpe": "cpe:2.3:a:tanstack:react-query-next-experimental:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/tanstack",
             "icon": "TanStack.svg"
         },
         "Tangiblee": {
@@ -87489,6 +87646,7 @@
             },
             "description": "Tempus is a lightweight animation frame manager for JavaScript applications, designed to optimize timing and control of visual updates.",
             "website": "https://github.com/darkroomengineering/tempus",
+            "purl": "pkg:npm/tempus",
             "icon": "Tempus.svg"
         },
         "Tencent Analytics (腾讯分析)": {
@@ -89190,6 +89348,7 @@
             ],
             "description": "Timeago is a jQuery plugin that automatically updates fuzzy timestamps.",
             "website": "https://timeago.yarp.com",
+            "purl": "pkg:npm/timeago",
             "icon": "Timeago.svg"
         },
         "Timepad": {
@@ -89326,7 +89485,8 @@
                 "tinycon(?:\\.min)?\\.js"
             ],
             "description": "A library for manipulating a websites favicon.",
-            "website": "https://github.com/tommoor/tinycon"
+            "website": "https://github.com/tommoor/tinycon",
+            "purl": "pkg:npm/tinycon"
         },
         "Tippy.js": {
             "cats": [
@@ -89345,6 +89505,7 @@
             ],
             "description": "Tippy.js is the complete tooltip, popover, dropdown, and menu solution for the web, powered by Popper.",
             "website": "https://atomiks.github.io/tippyjs",
+            "purl": "pkg:npm/tippy.js",
             "icon": "Tippy.js.svg"
         },
         "Tipsa": {
@@ -89367,6 +89528,7 @@
             ],
             "description": "Tipso is a lightweight, responsive jQuery plugin designed to display customizable tooltips across devices and screen sizes.",
             "website": "https://tipso.object505.com",
+            "purl": "pkg:npm/tipso",
             "icon": "Tipso.svg"
         },
         "Tiptap": {
@@ -89481,6 +89643,7 @@
             },
             "description": "TogetherJS is an open-source JavaScript library by Mozilla that integrates collaboration tools and features into websites.",
             "website": "https://togetherjs.com",
+            "purl": "pkg:npm/togetherjs",
             "icon": "TogetherJS.svg"
         },
         "Tokeet": {
@@ -90176,6 +90339,7 @@
             },
             "website": "https://www.transifex.com",
             "cpe": "cpe:2.3:a:transifex:transifex:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/transifex",
             "icon": "transifex.png"
         },
         "Transistor.fm": {
@@ -90349,6 +90513,7 @@
             "description": "Tremor is an open-source library for building charts and dashboards using React components, designed on top of Tailwind CSS.",
             "website": "https://tremor.so",
             "cpe": "cpe:2.3:a:linuxfoundation:tremor:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/tremor",
             "icon": "Tremor.svg"
         },
         "Trendemon": {
@@ -91632,7 +91797,8 @@
             ],
             "description": "Typed.js is a library that types. It is designed to create typewriter-style animations with ease.",
             "website": "https://mattboldt.com/demos/typed-js/",
-            "cpe": "cpe:2.3:a:mrlegend1235:typed_js:*:*:*:*:*:*:*:*"
+            "cpe": "cpe:2.3:a:mrlegend1235:typed_js:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/typed.js"
         },
         "Typeflo": {
             "cats": [
@@ -91690,7 +91856,8 @@
                 "unpkg\\.com/typer-dot-js@([\\d\\.]+)/typer\\.js\\;version:\\1"
             ],
             "description": "Typer.js is a JavaScript library for creating a fully configurable typing effect in HTML.",
-            "website": "https://github.com/straversi/Typer.js"
+            "website": "https://github.com/straversi/Typer.js",
+            "purl": "pkg:npm/typer.js"
         },
         "Typesense": {
             "cats": [
@@ -92520,6 +92687,7 @@
             "description": "Unpoly is an unobtrusive Javascript framework for applications that render on the server.",
             "website": "https://unpoly.com",
             "cpe": "cpe:2.3:a:unpoly:unpoly-rails:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/unpoly",
             "icon": "Unpoly.svg"
         },
         "Unruly": {
@@ -92720,6 +92888,7 @@
             },
             "description": "Uppy is an open-source, modular JavaScript file uploader designed for integration and file management across web applications.",
             "website": "https://uppy.io",
+            "purl": "pkg:npm/uppy",
             "icon": "Uppy.svg"
         },
         "Upravel": {
@@ -94382,6 +94551,7 @@
             },
             "description": "Vex is a lightweight library for creating functional dialogs using vanilla JavaScript without external dependencies.",
             "website": "https://github.hubspot.com/vex",
+            "purl": "pkg:npm/vex",
             "icon": "HubSpot.svg"
         },
         "Vextras": {
@@ -94692,6 +94862,7 @@
             ],
             "description": "Vike is a framework that enhances Vite applications with server-side rendering (SSR) and static site generation (SSG) capabilities, allowing for flexible integration and progressive enhancement​.",
             "website": "https://vike.dev",
+            "purl": "pkg:npm/vike",
             "icon": "Vike.svg"
         },
         "Vikreta": {
@@ -95726,6 +95897,7 @@
             ],
             "description": "VueStrap is a collection of Bootstrap components built with Vue.js.",
             "website": "https://yuche.github.io/vue-strap",
+            "purl": "pkg:npm/vuestrap",
             "icon": "vue.svg"
         },
         "Vuetify": {
@@ -95770,6 +95942,7 @@
             ],
             "description": "Vultr is a cloud computing service provider.",
             "website": "https://www.vultr.com",
+            "purl": "pkg:npm/vultr",
             "icon": "Vultr.svg"
         },
         "Vuture": {
@@ -96014,7 +96187,8 @@
                 "wow(?:\\.min)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "Reveal CSS animation as you scroll down a page.",
-            "website": "https://www.delac.io/WOW"
+            "website": "https://www.delac.io/WOW",
+            "purl": "pkg:npm/wow"
         },
         "WP Automatic": {
             "cats": [
@@ -97627,6 +97801,7 @@
                 "\\bwebix\\.js"
             ],
             "website": "https://webix.com",
+            "purl": "pkg:npm/webix",
             "icon": "Webix.png"
         },
         "Weblate": {
@@ -98466,6 +98641,7 @@
             ],
             "description": "Wijmo is a JavaScript UI component library built in TypeScript, ideal for developing lightweight, high-speed HTML5/JavaScript applications with no dependencies, and designed for enterprise use.",
             "website": "https://developer.mescius.com/wijmo",
+            "purl": "pkg:npm/wijmo",
             "icon": "Wijmo.svg"
         },
         "Wiki.js": {
@@ -98596,6 +98772,7 @@
             ],
             "description": "Wink Toolkit is a JavaScript toolkit used to build mobile web apps.",
             "website": "https://winktoolkit.org",
+            "purl": "pkg:npm/wink",
             "icon": "Wink.png"
         },
         "Wins eCommerce": {
@@ -99230,6 +99407,7 @@
             ],
             "description": "WookMark is a plugin for laying out elements of varying heights in a column-based grid.",
             "website": "https://wookmark.com",
+            "purl": "pkg:npm/wookmark",
             "icon": "WookMark.svg"
         },
         "Woopra": {
@@ -99808,6 +99986,7 @@
             ],
             "description": "WURFL.js is JavaScript that detects device models of smartphones, tablets, smart TVs and game consoles accessing your website.",
             "website": "https://web.wurfl.io/",
+            "purl": "pkg:npm/wurfl",
             "icon": "Wurfl.png"
         },
         "Wx3": {
@@ -99986,6 +100165,7 @@
                 "xregexp[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1"
             ],
             "website": "https://xregexp.com",
+            "purl": "pkg:npm/xregexp",
             "icon": "XRegExp.png"
         },
         "XSLT": {
@@ -100425,6 +100605,7 @@
             "description": "YUI is a JavaScript and CSS library with more than 30 unique components including low-level DOM utilities and high-level user-interface widgets.",
             "website": "https://clarle.github.io/yui3",
             "cpe": "cpe:2.3:a:yahoo:yui:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/yui",
             "icon": "YUI.png"
         },
         "YUI Doc": {
@@ -101686,6 +101867,7 @@
             },
             "description": "Zeabur is a platform for running full stack apps and databases.",
             "website": "https://zeabur.com",
+            "purl": "pkg:npm/zeabur",
             "icon": "zeabur.svg"
         },
         "Zeald": {
@@ -102061,6 +102243,7 @@
                 "zepto.*\\.js"
             ],
             "website": "https://zeptojs.com",
+            "purl": "pkg:npm/zepto",
             "icon": "Zepto.png"
         },
         "ZestMoney": {
@@ -102209,6 +102392,7 @@
             ],
             "description": "Ziggy is a library that allows using Laravel named routes in JavaScript.",
             "website": "https://github.com/tighten/ziggy",
+            "purl": "pkg:npm/ziggy",
             "icon": "Ziggy.png"
         },
         "Zimbra": {
@@ -102601,6 +102785,7 @@
                 "Angular"
             ],
             "website": "https://github.com/angular/angular/tree/master/packages/zone.js",
+            "purl": "pkg:npm/zone.js",
             "icon": "Angular.svg"
         },
         "Zonos": {
@@ -103121,6 +103306,7 @@
             ],
             "description": "autoComplete.js is a simple, pure vanilla Javascript library.",
             "website": "https://tarekraafat.github.io/autoComplete.js",
+            "purl": "pkg:npm/autocomplete.js",
             "icon": "autoComplete.js.svg"
         },
         "autoship": {
@@ -103155,6 +103341,7 @@
                 "basket.isValidItem": ""
             },
             "website": "https://addyosmani.github.io/basket.js/",
+            "purl": "pkg:npm/basket.js",
             "icon": "basket.js.png"
         },
         "bbPress": {
@@ -103251,7 +103438,8 @@
                 "(?:((?:\\d+\\.)+\\d+)\\/)?bowser(?:\\.min)?(?:[-\\.][\\d\\w]{0,64})?\\.js\\;version:\\1"
             ],
             "description": "A small, fast and rich-API browser/platform/engine detector for both browser and node.",
-            "website": "https://opencollective.com/bowser"
+            "website": "https://opencollective.com/bowser",
+            "purl": "pkg:npm/bowser"
         },
         "bun": {
             "cats": [
@@ -103274,6 +103462,7 @@
             ],
             "description": "Add a respsonsive image slider to any website.",
             "website": "https://bxslider.com/",
+            "purl": "pkg:npm/bxslider",
             "icon": "bxSlider.png"
         },
         "c/side": {
@@ -103492,6 +103681,7 @@
             },
             "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
             "website": "https://github.com/zloirock/core-js",
+            "purl": "pkg:npm/core-js",
             "icon": "core-js.png"
         },
         "crypto-js": {
@@ -103508,6 +103698,7 @@
             "description": "crypto-js is a JavaScript library of crypto standards.",
             "website": "https://github.com/brix/crypto-js",
             "cpe": "cpe:2.3:a:crypto-js_project:crypto-js:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/crypto-js",
             "icon": "default.svg"
         },
         "daisyUI": {
@@ -103581,6 +103772,7 @@
                 "decimal[.-]([\\d.]*\\d+)(?:\\.min)?\\.js\\;version:\\1"
             ],
             "website": "https://mikemcl.github.io/decimal.js/",
+            "purl": "pkg:npm/decimal.js",
             "icon": "decimal.js.png"
         },
         "deepMiner": {
@@ -103616,7 +103808,8 @@
                 "dimple(?:\\/lib\\/[\\w\\.]+)?(?:\\/theme\\/js\\/[\\w\\.-]+)?\\.js(?:\\?ver=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "dimple.js is a powerful and flexible open-source charting API for d3 letting you quickly and easily create and combine bar, line, area and scatter charts.",
-            "website": "http://dimplejs.org/"
+            "website": "http://dimplejs.org/",
+            "purl": "pkg:npm/dimple"
         },
         "doxo": {
             "cats": [
@@ -104069,6 +104262,7 @@
                 "/ef(?:-core)?(?:\\.min|\\.dev)?\\.js"
             ],
             "website": "https://ef.js.org",
+            "purl": "pkg:npm/ef.js",
             "icon": "ef.js.svg"
         },
         "emBlue": {
@@ -104192,6 +104386,7 @@
             ],
             "description": "Full Featured Mobile HTML Framework For Building iOS \u0026 Android Apps.",
             "website": "https://framework7.io/",
+            "purl": "pkg:npm/framework7",
             "icon": "framework7.png"
         },
         "freewebstore": {
@@ -104221,6 +104416,7 @@
             ],
             "description": "fullPage.js a jQuery and vanilla JavaScript plugin for fullscreen scrolling websites.",
             "website": "https://github.com/alvarotrigo/fullpage.js",
+            "purl": "pkg:npm/fullpage.js",
             "icon": "fullPage.js.png"
         },
         "genezio": {
@@ -104402,7 +104598,8 @@
                 "html2canvas(?:\\.min)?(?:[_\\w]{0,8})?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "Screenshots with JavaScript.",
-            "website": "https://html2canvas.hertzen.com/"
+            "website": "https://html2canvas.hertzen.com/",
+            "purl": "pkg:npm/html2canvas"
         },
         "i-MSCP": {
             "cats": [
@@ -104494,7 +104691,8 @@
                 "/(?:js|icheck)/icheck\\.min\\.js"
             ],
             "description": "iCheck is a library for customizable checkboxes and radio buttons.",
-            "website": "https://github.com/drgullin/icheck"
+            "website": "https://github.com/drgullin/icheck",
+            "purl": "pkg:npm/icheck"
         },
         "iClose": {
             "cats": [
@@ -104781,7 +104979,8 @@
                 "imagesloaded(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "jQuery plugin for seeing if the images are loaded.",
-            "website": "https://imagesloaded.desandro.com/"
+            "website": "https://imagesloaded.desandro.com/",
+            "purl": "pkg:npm/imagesloaded"
         },
         "immediaCMS": {
             "cats": [
@@ -105003,6 +105202,7 @@
             "description": "jPlayer is a cross-browser JavaScript library developed as a jQuery plugin which facilitates the embedding of web based media, notably HTML5 audio and video in addition to Adobe Flash based media.",
             "website": "https://jplayer.org",
             "cpe": "cpe:2.3:a:happyworm:jplayer:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/jplayer",
             "icon": "jPlayer.png"
         },
         "jQTouch": {
@@ -105258,6 +105458,7 @@
             "description": "jsPDF is a HTML5 client-side solution for generating PDF documents directly within web browsers.",
             "website": "https://parall.ax/products/jspdf",
             "cpe": "cpe:2.3:a:parall:jspdf:*:*:*:*:*:*:*:*",
+            "purl": "pkg:npm/jspdf",
             "icon": "jsPDF.svg"
         },
         "k-eCommerce": {
@@ -105316,6 +105517,7 @@
             ],
             "description": "libphonenumber is a JavaScript library for parsing, formatting, and validating international phone numbers.",
             "website": "https://github.com/google/libphonenumber",
+            "purl": "pkg:npm/libphonenumber",
             "icon": "default.svg"
         },
         "libwww-perl-daemon": {
@@ -105352,6 +105554,7 @@
             },
             "description": "lit-element is a simple base class for creating web components that work in any web page with any framework. lit-element uses lit-html to render into shadow DOM, and adds API to manage properties and attributes.",
             "website": "https://lit.dev",
+            "purl": "pkg:npm/lit-element",
             "icon": "Lit.svg"
         },
         "lit-html": {
@@ -105363,6 +105566,7 @@
             },
             "description": "lit-html is a simple, modern, safe, small and fast HTML templating library for JavaScript.",
             "website": "https://lit.dev",
+            "purl": "pkg:npm/lit-html",
             "icon": "Lit.svg"
         },
         "lite-youtube-embed": {
@@ -105378,7 +105582,8 @@
                 "YouTube"
             ],
             "description": "The lite-youtube-embed technique renders the YouTube video inside the IFRAME tag only when the play button in clicked thus improving the core web vitals score of your website.",
-            "website": "https://github.com/paulirish/lite-youtube-embed"
+            "website": "https://github.com/paulirish/lite-youtube-embed",
+            "purl": "pkg:npm/lite-youtube-embed"
         },
         "mOxie": {
             "cats": [
@@ -105389,7 +105594,8 @@
                 "moxie": ""
             },
             "description": "mOxie is a library providing polyfills for XHR2 and File API, ensuring compatibility with older browsers that lack native support.",
-            "website": "https://github.com/moxiecode/moxie"
+            "website": "https://github.com/moxiecode/moxie",
+            "purl": "pkg:npm/moxie"
         },
         "mParticle": {
             "cats": [
@@ -105418,6 +105624,7 @@
             ],
             "description": "Math.js a JavaScript library that provides a comprehensive set of mathematical functions and capabilities for performing complex calculations and operations in web applications.",
             "website": "https://mathjs.org",
+            "purl": "pkg:npm/math.js",
             "icon": "math.js.png"
         },
         "mdBook": {
@@ -105447,7 +105654,8 @@
                 "jQuery"
             ],
             "description": "metisMenu is a collapsible jQuery menu plugin.",
-            "website": "https://github.com/onokumus/metismenu"
+            "website": "https://github.com/onokumus/metismenu",
+            "purl": "pkg:npm/metismenu"
         },
         "microCMS": {
             "cats": [
@@ -105922,7 +106130,8 @@
                 "parallax(?:\\/assets\\/js)?(?:\\/jquery)?(?:\\/scripts)?(?:\\/wow)?(?:[_\\.]move)?(?:\\.inview)?(?:\\.pkgd)?(?:\\.scrolling)?(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "Simple parallax scrolling effect.",
-            "website": "https://github.com/pixelcog/parallax.js"
+            "website": "https://github.com/pixelcog/parallax.js",
+            "purl": "pkg:npm/parallax.js"
         },
         "parcel": {
             "cats": [
@@ -105965,7 +106174,8 @@
                 "pdfmake(?:[\\/-]((?:\\d+\\.)+\\d+)\\/(?:build\\/)?)?(?:pdfmake)?(?:vfs_fonts)?(?:\\.min)?\\.js\\;version:\\1"
             ],
             "description": "Client/server side PDF printing in pure JavaScript.",
-            "website": "https://bpampuch.github.io/pdfmake"
+            "website": "https://bpampuch.github.io/pdfmake",
+            "purl": "pkg:npm/pdfmake"
         },
         "petite-vue": {
             "cats": [
@@ -106260,6 +106470,7 @@
                 "jQuery"
             ],
             "website": "https://no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/",
+            "purl": "pkg:npm/prettyphoto",
             "icon": "prettyPhoto.png"
         },
         "punBB": {
@@ -106286,7 +106497,8 @@
                 "punycode(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.){1,2}\\d+))?\\;version:\\1"
             ],
             "description": "A robust Punycode converter that fully complies to RFC 3492 and RFC 5891, and works on nearly all JavaScript platforms.",
-            "website": "https://github.com/mathiasbynens/punycode.js"
+            "website": "https://github.com/mathiasbynens/punycode.js",
+            "purl": "pkg:npm/punycode"
         },
         "qiankun": {
             "cats": [
@@ -106304,6 +106516,7 @@
             ],
             "description": "qiankun is a JS library who helps developers to build a micro frontends system.",
             "website": "https://qiankun.umijs.org",
+            "purl": "pkg:npm/qiankun",
             "icon": "qiankun.svg"
         },
         "rSchoolToday": {
@@ -106403,6 +106616,7 @@
                 "scrollreveal(?:\\.min)(?:\\.js)"
             ],
             "website": "https://scrollrevealjs.org",
+            "purl": "pkg:npm/scrollreveal",
             "icon": "scrollreveal.svg"
         },
         "shadcn-svelte": {
@@ -106457,7 +106671,8 @@
                 "sidr(?:\\.min)?\\.js(?:\\?v(?:er)?=((?:\\d+\\.)+\\d+))?\\;version:\\1"
             ],
             "description": "Sidr is a jQuery plugin for creating side menus.",
-            "website": "https://www.albertovarela.net/sidr/"
+            "website": "https://www.albertovarela.net/sidr/",
+            "purl": "pkg:npm/sidr"
         },
         "siimple": {
             "cats": [
@@ -106503,6 +106718,7 @@
             ],
             "description": "A touch slideout navigation menu for your mobile web apps.",
             "website": "https://slideout.js.org/",
+            "purl": "pkg:npm/slideout",
             "icon": "slideout.png"
         },
         "snigel AdConsent": {
@@ -106690,7 +106906,8 @@
                 "(?:((?:\\d+\\.)+\\d+)\\/)?(?:jquery\\.)?[tt]imeago(?:_mkdocs_material)?(?:\\.full)?(?:\\.locales)?(?:\\.native)?(?:\\.min)?\\.js\\;version:\\1"
             ],
             "description": "Timeago is a jQuery plugin that makes it easy to support automatically updating fuzzy timestamps.",
-            "website": "https://timeago.yarp.com/"
+            "website": "https://timeago.yarp.com/",
+            "purl": "pkg:npm/timeago"
         },
         "tinyAlbert": {
             "cats": [
@@ -106726,6 +106943,7 @@
             },
             "description": "toastr is a Javascript library for non-blocking notifications. The goal is to create a simple core library that can be customized and extended.",
             "website": "https://github.com/CodeSeven/toastr",
+            "purl": "pkg:npm/toastr",
             "icon": "toastr.png"
         },
         "total.js": {
@@ -107045,6 +107263,7 @@
             },
             "description": "vxe-table is a Vue.js based PC form component, support add, delete, change, virtual scroll, lazy load, shortcut menu, data validation, tree structure, print export, form rendering, data paging, virtual list, modal window, custom template, renderer, flexible configuration items, extension interface.",
             "website": "https://vxetable.cn",
+            "purl": "pkg:npm/vxe-table",
             "icon": "vxe-table.png"
         },
         "wBuy": {
@@ -107099,6 +107318,7 @@
             ],
             "description": "The web-vitals JavaScript is a tiny, modular library for measuring all the web vitals metrics on real users.",
             "website": "https://github.com/GoogleChrome/web-vitals",
+            "purl": "pkg:npm/web-vitals",
             "icon": "web-vitals.svg"
         },
         "webEdition": {
