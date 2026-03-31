@@ -4106,6 +4106,7 @@
             ],
             "description": "Alliance Auth is an access management platform designed for Eve Online groups. It controls access to applications and services based on in-game memberships.",
             "website": "https://gitlab.com/allianceauth/allianceauth",
+            "purl": "pkg:pypi/allianceauth",
             "icon": "Alliance Auth.svg"
         },
         "Alloka": {
@@ -6792,6 +6793,7 @@
             "description": "Asciidoctor is an open-source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.",
             "website": "https://github.com/asciidoctor/asciidoctor",
             "cpe": "cpe:2.3:a:asciidoctor:asciidoctor:*:*:*:*:*:*:*:*",
+            "purl": "pkg:gem/asciidoctor",
             "icon": "Asciidoctor.png"
         },
         "Asciinema": {
@@ -6842,6 +6844,7 @@
             },
             "description": "Aseqbase is a sequence-based web development framework designed to create robust websites.",
             "website": "https://aseqbase.mimfa.net",
+            "purl": "pkg:composer/aseqbase/aseqbase",
             "icon": "Aseqbase.svg"
         },
         "Asgaros Forum": {
@@ -8649,6 +8652,7 @@
             "description": "Backdrop is an open-source content management system (CMS) derived from Drupal 7, offering a user-friendly interface, customisable content types, taxonomies, views, theming capabilities, extensibility through modules, and regular security updates.",
             "website": "https://backdropcms.org",
             "cpe": "cpe:2.3:a:backdropcms:backdrop:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/backdrop/backdrop",
             "icon": "Backdrop.svg"
         },
         "BackerKit": {
@@ -8714,6 +8718,7 @@
             "description": "Bagisto is an open-source Laravel ecommerce framework that provides customizable features for building and managing online stores.",
             "website": "https://bagisto.com",
             "cpe": "cpe:2.3:a:webkul:bagisto:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/bagisto/bagisto",
             "icon": "Bagisto.svg"
         },
         "Bahooosh": {
@@ -8893,6 +8898,7 @@
             "description": "Banshee is a PHP website framework with a main focus on security. Banshee is protected against common attacks like SQL injection, cross-site scripting, cross-site request forgery and session hijacking.",
             "website": "https://www.banshee-php.org",
             "cpe": "cpe:2.3:a:banshee-project:banshee:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/hsleisink/banshee",
             "icon": "Banshee.png"
         },
         "Bant": {
@@ -11389,6 +11395,7 @@
             "description": "BookStack is a simple, open-source, self-hosted, easy-to-use platform for organising and storing information.",
             "website": "https://www.bookstackapp.com",
             "cpe": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/ssddanbrown/bookstack",
             "icon": "BookStack.svg"
         },
         "BookThatApp": {
@@ -12797,6 +12804,7 @@
                 "Ruby"
             ],
             "website": "https://browsercms.org",
+            "purl": "pkg:gem/browsercms",
             "icon": "BrowserCMS.png"
         },
         "Brushd": {
@@ -12894,6 +12902,7 @@
             "description": "BuddyPress is designed to allow schools, companies, sports teams, or any other niche community to start their own social network or communication tool.",
             "website": "https://buddypress.org",
             "cpe": "cpe:2.3:a:buddypress:buddypress:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/buddypress/buddypress",
             "icon": "BuddyPress.svg"
         },
         "BugHerd": {
@@ -16599,6 +16608,7 @@
             ],
             "website": "https://ckan.org/",
             "cpe": "cpe:2.3:a:okfn:ckan:*:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/ckan",
             "icon": "Ckan.png"
         },
         "Clarifai": {
@@ -18146,6 +18156,7 @@
             ],
             "website": "https://www.coastercms.org",
             "cpe": "cpe:2.3:a:web-feet:coaster_cms:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/coastercms/coastercms",
             "icon": "coaster-cms.png"
         },
         "Coax": {
@@ -19374,6 +19385,7 @@
             "description": "Contao is an open source CMS that allows you to create websites and scalable web applications.",
             "website": "https://contao.org",
             "cpe": "cpe:2.3:a:contao:contao_cms:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/contao/contao",
             "icon": "Contao.svg"
         },
         "Contenido": {
@@ -20534,6 +20546,7 @@
             ],
             "website": "https://www.cotonti.com",
             "cpe": "cpe:2.3:a:cotonti:cotonti_siena:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/cotonti/cotonti",
             "icon": "Cotonti.png"
         },
         "CouchDB": {
@@ -23849,6 +23862,7 @@
             "description": "Django CMS is a free and open source content management system platform for publishing content on the World Wide Web and intranets.",
             "website": "https://www.django-cms.org",
             "cpe": "cpe:2.3:a:django-cms:django_cms:*:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/django-cms",
             "icon": "Django CMS.png"
         },
         "DocFX": {
@@ -25315,6 +25329,7 @@
             "description": "EC-CUBE is an open source package used to build ecommerce sites.",
             "website": "https://www.ec-cube.net",
             "cpe": "cpe:2.3:a:lockon:ec-cube:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/ec-cube/ec-cube",
             "icon": "EC-CUBE.svg"
         },
         "ECBB": {
@@ -25711,6 +25726,7 @@
             ],
             "description": "EasyEngine is a command-line tool for the Nginx web servers to manage WordPress sites that are running on the LEMP Stack.",
             "website": "https://easyengine.io",
+            "purl": "pkg:composer/easyengine/easyengine",
             "icon": "EasyEngine.png"
         },
         "EasyGift": {
@@ -26691,6 +26707,7 @@
             ],
             "description": "ElkArte is an open-source PHP-based forum software with MySQL integration, offering features such as user authentication, topic categorisation, post formatting, private messaging, moderation tools, and customisable themes and extensions.",
             "website": "https://www.elkarte.net",
+            "purl": "pkg:composer/elkarte/elkarte",
             "icon": "ElkArte.png"
         },
         "Elliptic": {
@@ -29203,6 +29220,7 @@
                 "Python"
             ],
             "website": "https://faral.tech",
+            "purl": "pkg:pypi/farapy",
             "icon": "FaraPy.png"
         },
         "Farazi Bilişim": {
@@ -30531,6 +30549,7 @@
             "description": "Flarum is a discussion platform.",
             "website": "https://flarum.org/",
             "cpe": "cpe:2.3:a:flarum:flarum:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/flarum/flarum",
             "icon": "flarum.png"
         },
         "Flashchat": {
@@ -30863,6 +30882,7 @@
             },
             "description": "Flipsite is a platform for creating and managing websites.",
             "website": "https://flipsite.io",
+            "purl": "pkg:composer/flipsite/flipsite",
             "icon": "Flipsite.svg"
         },
         "Flipsnack": {
@@ -31714,6 +31734,7 @@
             "description": "Fork CMS is an open-source content management system.",
             "website": "https://www.fork-cms.com",
             "cpe": "cpe:2.3:a:fork-cms:fork_cms:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/forkcms/forkcms",
             "icon": "ForkCMS.png"
         },
         "Form.io": {
@@ -33232,6 +33253,7 @@
             ],
             "description": "Furo is a customizable Sphinx documentation theme designed to provide a clean, responsive, and user-friendly layout for technical and project documentation.",
             "website": "https://pradyunsg.me/furo",
+            "purl": "pkg:pypi/furo",
             "icon": "Furo.svg"
         },
         "Fusion Ads": {
@@ -39380,6 +39402,7 @@
                 "PHP"
             ],
             "website": "https://hotarucms.org",
+            "purl": "pkg:composer/hotarucms/hotarucms",
             "icon": "Hotaru CMS.png"
         },
         "Hotbot": {
@@ -40964,6 +40987,7 @@
             ],
             "website": "https://www.impresscms.org",
             "cpe": "cpe:2.3:a:impresscms:impresscms:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/impresscms/impresscms",
             "icon": "ImpressCMS.png"
         },
         "ImpressPages": {
@@ -40980,6 +41004,7 @@
             ],
             "website": "https://impresspages.org",
             "cpe": "cpe:2.3:a:impresspages:impresspages_cms:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/impresspages/impresspages",
             "icon": "ImpressPages.png"
         },
         "Impressure": {
@@ -42128,6 +42153,7 @@
             "description": "Invenio is an open-source software framework for large-scale digital repositories that provides the tools for management of digital assets in an institutional repository and research data management systems.",
             "website": "https://invenio-software.org",
             "cpe": "cpe:2.3:a:cds_software_consortium:invenio:*:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/invenio",
             "icon": "Invenio.png"
         },
         "Inventrue": {
@@ -44916,6 +44942,7 @@
             ],
             "description": "Kiprotect is a software platform that provides data protection and data security capabilities for safeguarding digital information.",
             "website": "https://kiprotect.com",
+            "purl": "pkg:pypi/kiprotect",
             "icon": "Kiprotect.svg"
         },
         "Kirby": {
@@ -45530,6 +45557,7 @@
             ],
             "website": "https://koala-framework.org",
             "cpe": "cpe:2.3:a:koala-framework:koala_framework:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/koala-framework/koala-framework",
             "icon": "Koala Framework.png"
         },
         "Kobalte": {
@@ -48806,6 +48834,7 @@
                 "Ruby on Rails"
             ],
             "website": "https://www.locomotivecms.com",
+            "purl": "pkg:gem/locomotivecms",
             "icon": "LocomotiveCMS.png"
         },
         "Lodash": {
@@ -50219,7 +50248,8 @@
                 "Livewire"
             ],
             "description": "Magewire is a Laravel Livewire port for Magento 2.",
-            "website": "https://github.com/magewirephp/magewire"
+            "website": "https://github.com/magewirephp/magewire",
+            "purl": "pkg:composer/magewirephp/magewire"
         },
         "Magic UI": {
             "cats": [
@@ -50409,6 +50439,7 @@
             ],
             "description": "Maho is a modern, open-source ecommerce platform forked from OpenMage, offering enhanced developer experience while maintaining Magento 1 compatibility.",
             "website": "https://mahocommerce.com",
+            "purl": "pkg:composer/mahocommerce/maho",
             "icon": "Maho.svg"
         },
         "MailChimp": {
@@ -50927,6 +50958,7 @@
             "description": "MantisBT is an open-source, web-based issue tracking system written in PHP with a MySQL database backend, designed to facilitate bug tracking and project management for software development teams.",
             "website": "https://www.mantisbt.org",
             "cpe": "cpe:2.3:a:mantisbt:mantisbt:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/mantisbt/mantisbt",
             "icon": "MantisBT.png"
         },
         "Manula": {
@@ -51237,6 +51269,7 @@
             "description": "MariaDB is an open-source relational database management system compatible with MySQL.",
             "website": "https://mariadb.org",
             "cpe": "cpe:2.3:a:mariadb_project:mariadb:*:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/mariadb",
             "icon": "mariadb.svg"
         },
         "Marionette.js": {
@@ -53269,6 +53302,7 @@
             "description": "Open Source drag and drop style hosted CMS system.",
             "website": "https://microweber.com",
             "cpe": "cpe:2.3:a:microweber:microweber:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/microweber/microweber",
             "icon": "Microweber.svg"
         },
         "Midtrans": {
@@ -58252,6 +58286,7 @@
             ],
             "description": "October is a free, open-source, self-hosted CMS platform based on the Laravel PHP Framework.",
             "website": "https://octobercms.com",
+            "purl": "pkg:composer/cludy-me/octobercms",
             "icon": "October CMS.png"
         },
         "Octopress": {
@@ -61007,6 +61042,7 @@
                 "debugbar.*\\.js"
             ],
             "website": "https://phpdebugbar.com/",
+            "purl": "pkg:composer/php-debugbar/php-debugbar",
             "icon": "phpdebugbar.png"
         },
         "PHPFusion": {
@@ -61423,6 +61459,7 @@
             },
             "website": "https://pagekit.com",
             "cpe": "cpe:2.3:a:pagekit:pagekit:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/pagekit/pagekit",
             "icon": "Pagekit.png"
         },
         "Pagely": {
@@ -64142,6 +64179,7 @@
             "description": "PixelFed is an activitypub based image sharing platform.",
             "website": "https://pixelfed.org",
             "cpe": "cpe:2.3:a:pixelfed:pixelfed:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/pixelfed/pixelfed",
             "icon": "PixelFed.svg"
         },
         "PixelYourSite": {
@@ -64797,6 +64835,7 @@
             "description": "Plone is a free and open source content management system (CMS) built on top of the Zope application server.",
             "website": "https://plone.org/",
             "cpe": "cpe:2.3:a:plone:plone:*:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/plone",
             "icon": "Plone.svg"
         },
         "Plotch": {
@@ -68135,6 +68174,7 @@
             "description": "PyScript is a python script that can be run in the browser using a mix of Python and standard HTML.",
             "website": "https://pyscript.net",
             "cpe": "cpe:2.3:a:pyscript:pyscript:*:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/pyscript",
             "icon": "PyScript.svg"
         },
         "PyWebIO": {
@@ -68146,6 +68186,7 @@
             ],
             "description": "PyWebIO is a browser-based framework that transforms the browser into a rich text terminal, allowing developers to create simple web or GUI applications using input and print functions without needing HTML or JavaScript knowledge.",
             "website": "https://pywebio.readthedocs.io/en/latest/",
+            "purl": "pkg:pypi/pywebio",
             "icon": "PyWebIO.svg"
         },
         "Pygments": {
@@ -68157,6 +68198,7 @@
             ],
             "website": "https://pygments.org",
             "cpe": "cpe:2.3:a:pygments:pygments:*:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/pygments",
             "icon": "pygments.png"
         },
         "PyroCMS": {
@@ -69156,6 +69198,7 @@
             "description": "RDoc produces HTML and command-line documentation for Ruby projects.",
             "website": "https://github.com/ruby/rdoc",
             "cpe": "cpe:2.3:a:dave_thomas:rdoc:*:*:*:*:*:*:*:*",
+            "purl": "pkg:gem/rdoc",
             "icon": "RDoc.png"
         },
         "RE-OS.com": {
@@ -71199,6 +71242,7 @@
             },
             "description": "Reflex is an open-source framework to build and deploy web apps.",
             "website": "https://reflex.dev",
+            "purl": "pkg:pypi/reflex",
             "icon": "Reflex.svg"
         },
         "Reform": {
@@ -73505,7 +73549,8 @@
             ],
             "description": "Rubedo is an open-source PHP CMS powered by the Zend Framework, NoSQL MongoDB, Elasticsearch, and AngularJS, offering advanced features for content management and development.",
             "website": "https://github.com/WebTales/rubedo",
-            "cpe": "cpe:2.3:a:rubedo_project:rubedo:*:*:*:*:*:*:*:*"
+            "cpe": "cpe:2.3:a:rubedo_project:rubedo:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/webtales/rubedo"
         },
         "Rubic": {
             "cats": [
@@ -79040,6 +79085,7 @@
             ],
             "description": "SimpleSAMLphp is an open-source PHP authentication application that provides support for SAML 2.0 as a Service Provider (SP) or Identity Provider (IdP).",
             "website": "https://simplesamlphp.org",
+            "purl": "pkg:composer/simplesamlphp/simplesamlphp",
             "icon": "default.svg"
         },
         "SimpleSat": {
@@ -80055,6 +80101,7 @@
             },
             "description": "Skeeks is a content management system (CMS) designed to create, organize, and manage digital content.",
             "website": "https://skeeks.com",
+            "purl": "pkg:composer/v3project/skeeks",
             "icon": "Skeeks.svg"
         },
         "Skeep": {
@@ -80817,6 +80864,7 @@
             ],
             "description": "Smartstore is an open-source ecommerce system with CMS capabilities.",
             "website": "https://www.smartstore.com",
+            "purl": "pkg:composer/smartstore/smart_store",
             "icon": "Smartstore.png"
         },
         "Smartstore Page Builder": {
@@ -82887,6 +82935,7 @@
                 "Ruby on Rails"
             ],
             "website": "https://spreecommerce.org",
+            "purl": "pkg:gem/spree",
             "icon": "Spree.png"
         },
         "Sprig": {
@@ -83984,6 +84033,7 @@
             "description": "StimulusReflex lets you create reactive web interfaces with Ruby on Rails.",
             "website": "https://docs.stimulusreflex.com",
             "cpe": "cpe:2.3:a:stimulusreflex:stimulusrelfex:*:*:*:*:*:*:*:*",
+            "purl": "pkg:gem/stimulus_reflex",
             "icon": "stimulus-reflex-logo.svg"
         },
         "Stitches": {
@@ -85807,6 +85857,7 @@
             ],
             "description": "Sylius is an open-source ecommerce framework based on Symfony full stack.",
             "website": "https://sylius.com",
+            "purl": "pkg:composer/sylius/sylius",
             "icon": "Sylius.svg"
         },
         "Symbolset": {
@@ -86501,6 +86552,7 @@
             "description": "TablePress is a free and open source plugin for the WordPress publishing platform. It enables you to create and manage tables on your website, without any coding knowledge.",
             "website": "https://tablepress.org",
             "cpe": "cpe:2.3:a:tablepress:tablepress:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/tobiasbg/tablepress",
             "icon": "TablePress.png"
         },
         "Tableau": {
@@ -87724,6 +87776,7 @@
             },
             "description": "Tendenci is a platform that provides resources for managing and organizing website content without requiring knowledge of HTML or complex programming tools.",
             "website": "https://www.tendenci.com",
+            "purl": "pkg:pypi/tendenci",
             "icon": "Tendenci.svg"
         },
         "Tender Support": {
@@ -88206,6 +88259,7 @@
                 "Symfony"
             ],
             "website": "https://thelia.net",
+            "purl": "pkg:composer/thelia/thelia",
             "icon": "Thelia.png"
         },
         "Theme Freesia Edge": {
@@ -88757,6 +88811,7 @@
             "description": "ThinkPHP is an open-source PHP framework with MVC structure developed and maintained by Shanghai Topthink Company.",
             "website": "https://www.thinkphp.cn",
             "cpe": "cpe:2.3:a:thinkphp:thinkphp:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/better-framework/thinkphp",
             "icon": "ThinkPHP.png"
         },
         "Thinkific": {
@@ -91164,7 +91219,8 @@
                 "turolinks\\.js"
             ],
             "description": "Turbolinks is a Rails feature, available as a gem and enabled by default in new Rails apps. It is intended to speed up navigating between pages of your application.",
-            "website": "https://github.com/turbolinks/turbolinks"
+            "website": "https://github.com/turbolinks/turbolinks",
+            "purl": "pkg:gem/turbolinks"
         },
         "Turbopack": {
             "cats": [
@@ -91259,6 +91315,7 @@
             ],
             "description": "Twenty Fifteen is the default WordPress theme for 2015.",
             "website": "https://wordpress.org/themes/twentyfifteen",
+            "purl": "pkg:composer/mbcx9rvt/twenty-fifteen",
             "icon": "WordPress.svg"
         },
         "Twenty Fourteen": {
@@ -91596,6 +91653,7 @@
                 "PHP"
             ],
             "website": "https://twistphp.com",
+            "purl": "pkg:composer/twistphp/twistphp",
             "icon": "TwistPHP.png"
         },
         "TwistedWeb": {
@@ -91883,6 +91941,7 @@
             ],
             "description": "Typesense is an open-source, typo-tolerant search-engine optimized for speed and relevance.",
             "website": "https://typesense.org",
+            "purl": "pkg:gem/typesense",
             "icon": "Typesense.svg"
         },
         "Typo 00": {
@@ -96674,6 +96733,7 @@
             "description": "Wagtail is a Django content management system (CMS) focused on flexibility and user experience.",
             "website": "https://wagtail.org",
             "cpe": "cpe:2.3:a:torchbox:wagtail:*:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/wagtail",
             "icon": "Wagtail.svg"
         },
         "Wair": {
@@ -97233,6 +97293,7 @@
             ],
             "website": "https://web2py.com",
             "cpe": "cpe:2.3:a:web2py:web2py:*:*:*:*:*:*:*:*",
+            "purl": "pkg:pypi/web2py",
             "icon": "Web2py.png"
         },
         "Web3Forms": {
@@ -99757,6 +99818,7 @@
             ],
             "description": "Workarea is a SaaS ecommerce platform for medium to large businesses.",
             "website": "https://www.workarea.com",
+            "purl": "pkg:gem/workarea",
             "icon": "Workarea.svg"
         },
         "Workbooks": {
@@ -100377,6 +100439,7 @@
                 ]
             },
             "website": "https://www.xpressengine.com/",
+            "purl": "pkg:composer/xpressengine/xpressengine",
             "icon": "XpressEngine.png"
         },
         "Xpresslane": {
@@ -101038,6 +101101,7 @@
             ],
             "description": "YesWiki is a collaborative website creation and management Free Software under the AGPL license, enabling any web user to create, delete, edit, or comment on site pages with unlimited editors or pages.",
             "website": "https://yeswiki.net",
+            "purl": "pkg:composer/yeswiki/yeswiki",
             "icon": "YesWiki.svg"
         },
         "Yett": {
@@ -101914,6 +101978,7 @@
                 ]
             },
             "website": "https://www.zen-cart.com",
+            "purl": "pkg:composer/zencart/zencart",
             "icon": "Zen Cart.png"
         },
         "Zen Planner": {
@@ -102135,6 +102200,7 @@
             },
             "description": "Zensical is an open-source platform that enables scalable technical-writing systems designed to maintain uninterrupted workflow.",
             "website": "https://zensical.org",
+            "purl": "pkg:pypi/zensical",
             "icon": "Zensical.svg"
         },
         "Zentap": {
@@ -103354,6 +103420,7 @@
             "description": "bbPress is a forum software built to integrate seamlessly with WordPress, allowing discussion forums to run directly within a WordPress blog.",
             "website": "https://bbpress.org",
             "cpe": "cpe:2.3:a:bbpress:bbpress:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/bbpress/bbpress",
             "icon": "bbPress.svg"
         },
         "bdok": {
@@ -104503,6 +104570,7 @@
                 "Drupal"
             ],
             "website": "https://www.govcms.gov.au",
+            "purl": "pkg:composer/govcms/govcms",
             "icon": "govCMS.svg"
         },
         "gunicorn": {
@@ -106264,6 +106332,7 @@
             "description": "phpDocumentor is an open-source documentation generator written in PHP.",
             "website": "https://www.phpdoc.org",
             "cpe": "cpe:2.3:a:joshua_eichorn:phpdocumentor:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/phpdocumentor/phpdocumentor",
             "icon": "phpDocumentor.png"
         },
         "phpMyAdmin": {
@@ -106302,6 +106371,7 @@
             ],
             "website": "https://phppgadmin.sourceforge.net",
             "cpe": "cpe:2.3:a:phppgadmin_project:phppgadmin:*:*:*:*:*:*:*:*",
+            "purl": "pkg:composer/phppgadmin/phppgadmin",
             "icon": "phpPgAdmin.png"
         },
         "phpRS": {
