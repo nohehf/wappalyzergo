@@ -718,6 +718,9 @@
             "js": {
                 "arcaptcha.checkboxCreatorRegistered": ""
             },
+            "scriptSrc": [
+                "widget\\.arcaptcha\\.co/"
+            ],
             "description": "ARCaptcha is a CAPTCHA system designed to enhance online security by preventing automated bots from accessing websites.",
             "website": "https://arcaptcha.co",
             "icon": "ARCaptcha.svg"
@@ -17818,6 +17821,9 @@
             "js": {
                 "turnstile": ""
             },
+            "scriptSrc": [
+                "challenges\\.cloudflare\\.com/turnstile/"
+            ],
             "description": "Turnstile is Cloudflare's smart CAPTCHA alternative.",
             "website": "https://www.cloudflare.com/products/turnstile",
             "icon": "CloudFlare.svg"
@@ -33043,6 +33049,10 @@
         "FunCaptcha": {
             "cats": [
                 16
+            ],
+            "scriptSrc": [
+                "cdn\\.arkoselabs\\.com/",
+                "arkoselabs\\.com/fc/"
             ],
             "description": "FunCaptcha is a type of CAPTCHA, which is a security measure used to protect websites and online services from spam, bots, and other forms of automated abuse.",
             "website": "https://www.arkoselabs.com/arkose-matchkey/",
@@ -100765,6 +100775,9 @@
                     "exists": ""
                 }
             },
+            "scriptSrc": [
+                "smartcaptcha\\.yandexcloud\\.net/"
+            ],
             "headers": {
                 "x-yandex-captcha": ""
             },
@@ -103207,6 +103220,9 @@
                 "adCAPTCHA": "",
                 "adcaptcha_vars": ""
             },
+            "scriptSrc": [
+                "widget\\.adcaptcha\\.com/"
+            ],
             "description": "adCAPTCHA is a security tool that integrates marketing and user experience to block bots while enhancing brand visibility, using dynamic content for varied challenges without collecting user data.",
             "website": "https://adcaptcha.com",
             "icon": "adCAPTCHA.svg"
