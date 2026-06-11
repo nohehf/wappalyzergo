@@ -1767,9 +1767,6 @@
     "MyBB": {
         "cpe": "cpe:2.3:a:mybb:mybb:*:*:*:*:*:*:*:*"
     },
-    "MySQL": {
-        "purl": "pkg:npm/mysql2"
-    },
     "MyTime": {
         "cpe": "cpe:2.3:a:irola:my-time:*:*:*:*:*:*:*:*"
     },

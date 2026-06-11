@@ -55573,7 +55573,6 @@
             "description": "MySQL is an open-source relational database management system.",
             "website": "https://mysql.com",
             "cpe": "cpe:2.3:a:mysql:mysql:*:*:*:*:*:*:*:*",
-            "purl": "pkg:npm/mysql2",
             "icon": "MySQL.svg"
         },
         "MySiteNow": {
